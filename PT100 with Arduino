@@ -1,0 +1,155 @@
+/*-----( Import needed libraries for Crystal LCD )-----*/
+// LCD part refers to https://github.com/duinoWitchery/hd44780
+
+#include <Wire.h>
+#include <hd44780.h>                       // main hd44780 header
+#include <hd44780ioClass/hd44780_I2Cexp.h> // i2c expander i/o class header
+#include <Adafruit_MAX31865.h>
+
+/*-----( Declare Constants )-----*/
+// LCD geometry
+const int LCD_COLS = 20;
+const int LCD_ROWS = 4;
+
+// Use software SPI: CS, DI, DO, CLK
+Adafruit_MAX31865 thermo = Adafruit_MAX31865(10,11,12,13);
+// Use hardware SPI, just pass in the cs pin
+//Adafruit_MAX316865 thermo = Adafruit_MAX31865(10);
+
+// The value of the Rref resistor. Use 430.0 for PT100 and 4300.0 for PT1000
+#define RREF 430.0
+// The 'nominal' 0-degrees-c resistance of the sensor
+// 100.0 for PT100, 1000.0 for PT000
+#define RNOMINAL 100.0
+
+
+/*-----( Declare LCD objects )-----*/
+hd44780_I2Cexp lcd; // declare lcd object: auto locate & auto config expander chip  
+
+
+void setup()    
+{
+  Serial.begin(9600);   
+
+  lcd.begin(20,4);              // initialize the lcd for 20 chars 4 lines, turn on backlight
+  thermo.begin(MAX31865_3WIRE); // set to 2WIRE or 4WIRE as necessary
+  
+// ------- Quick 3 blinks of backlight  -------------
+  for(int i = 0; i< 3; i++)
+  {
+    lcd.backlight();
+    delay(250);
+    lcd.noBacklight();
+    delay(250);
+  }
+  lcd.backlight(); // finish with backlight on  
+
+//-------- Write characters on the display ------------------
+  // NOTE: Cursor Position: Lines and Characters start at 0  
+  lcd.setCursor(3,0); //Start at character 4 on line 0
+  lcd.print("PT100 RTD TEST");
+  delay(1000);
+  lcd.setCursor(8,1);  // 8열 1행
+  lcd.print("for");
+  delay(1000);
+  lcd.setCursor(5,2);   //5열 2행
+  lcd.print("IoT Project");
+  lcd.setCursor(0,3);
+  delay(2000);
+  lcd.print("http://envirtek.com");
+  delay(5000);
+  lcd.clear();
+  
+} 
+
+
+void loop()   /*----( LOOP: RUNS CONSTANTLY )----*/
+{
+  //PT100_Serial();
+  PT100_LCD();
+} 
+
+void PT100_LCD(){
+  
+  uint16_t rtd = thermo.readRTD();
+  float ratio = rtd;
+  ratio /= 32768;
+  
+  lcd.setCursor(0,0);
+  lcd.print("RTD value: "); lcd.setCursor(11,0); lcd.print(rtd);
+   
+  lcd.setCursor(0,1); lcd.print("Ratio: "); 
+  lcd.setCursor(7,1); lcd.print(ratio,8);
+  
+  lcd.setCursor(0,2); lcd.print("Resis: "); 
+  lcd.setCursor(7,2);lcd.print(RREF*ratio,8);
+  
+  lcd.setCursor(0,3); lcd.print("Temp = "); 
+  lcd.setCursor(7,3); lcd.print(thermo.temperature(RNOMINAL, RREF));
+
+  // Check and print any faults
+  uint8_t fault = thermo.readFault();
+  if (fault) {
+    Serial.print("Fault 0x"); Serial.println(fault, HEX);
+    if (fault & MAX31865_FAULT_HIGHTHRESH) {
+      Serial.println("RTD High Threshold"); 
+    }
+    if (fault & MAX31865_FAULT_LOWTHRESH) {
+      Serial.println("RTD Low Threshold"); 
+    }
+    if (fault & MAX31865_FAULT_REFINLOW) {
+      Serial.println("REFIN- > 0.85 x Bias"); 
+    }
+    if (fault & MAX31865_FAULT_REFINHIGH) {
+      Serial.println("REFIN- < 0.85 x Bias - FORCE- open"); 
+    }
+    if (fault & MAX31865_FAULT_RTDINLOW) {
+      Serial.println("RTDIN- < 0.85 x Bias - FORCE- open"); 
+    }
+    if (fault & MAX31865_FAULT_OVUV) {
+      Serial.println("Under/Over voltage"); 
+    }
+    thermo.clearFault();
+  }
+  Serial.println();
+  delay(2000);
+  lcd.clear();
+}
+
+void PT100_Serial(){
+
+  uint16_t rtd = thermo.readRTD();
+  Serial.print("RTD value: "); Serial.println(rtd);
+  float ratio = rtd;
+  ratio /= 32768;
+  Serial.print("Ratio = "); Serial.println(ratio, 8);
+  Serial.print("Resistance = "); Serial.println(RREF*ratio, 8);
+  Serial.print("Temperature = "); Serial.println(thermo.temperature(RNOMINAL, RREF));
+
+  // Check and print any faults
+  uint8_t fault = thermo.readFault();
+  if (fault) {
+    Serial.print("Fault 0x"); Serial.println(fault, HEX);
+    if (fault & MAX31865_FAULT_HIGHTHRESH) {
+      Serial.println("RTD High Threshold"); 
+    }
+    if (fault & MAX31865_FAULT_LOWTHRESH) {
+      Serial.println("RTD Low Threshold"); 
+    }
+    if (fault & MAX31865_FAULT_REFINLOW) {
+      Serial.println("REFIN- > 0.85 x Bias"); 
+    }
+    if (fault & MAX31865_FAULT_REFINHIGH) {
+      Serial.println("REFIN- < 0.85 x Bias - FORCE- open"); 
+    }
+    if (fault & MAX31865_FAULT_RTDINLOW) {
+      Serial.println("RTDIN- < 0.85 x Bias - FORCE- open"); 
+    }
+    if (fault & MAX31865_FAULT_OVUV) {
+      Serial.println("Under/Over voltage"); 
+    }
+    thermo.clearFault();
+  }
+  Serial.println();
+  delay(1000);
+}
