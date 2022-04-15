@@ -1,5 +1,5 @@
 /*-----( Import needed libraries for Crystal LCD )-----*/
-// LCD part refers to https://github.com/duinoWitchery/hd44780
+// LCD part refers to https://github.com/duinoWitchery/hd44780 
 
 #include <Wire.h>
 #include <hd44780.h>                       // main hd44780 header
