@@ -15,6 +15,8 @@
  -  Battery: 18650 Lithium polymer battery (3.65V, 2850mAh) x 1
  -  Frame: Aluminum profile(40mm x 40mm) 
  -  Serve motor: MG996R (180 degree) x 2
+    ![image](https://user-images.githubusercontent.com/24539773/196140738-d56a92d2-846e-47ed-a68b-455eb37a92dd.png)
+
  -  MOSFET module: IRF520 x 1
     <br><center><img src="https://user-images.githubusercontent.com/24539773/196126013-d468d98e-1329-424f-954f-2957cacb88dc.png" width="200" height="200"></center>
  -  Capacitor: (470uF, 16V) x x
