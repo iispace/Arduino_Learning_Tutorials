@@ -10,7 +10,7 @@
  -  MOSFET module: IRF520
     <br><center><img src="https://user-images.githubusercontent.com/24539773/196126013-d468d98e-1329-424f-954f-2957cacb88dc.png" width="200" height="200"></center>
  -  Capacitor: 470uF, 16V
- -  Hydrogen container: 20Syringe without needle
+ -  Hydrogen container: 20ml Syringe without needle
  -  Limit Switch: Micro Limit Switch (20mm x 10mm x 4mm)
     <br>![image](https://user-images.githubusercontent.com/24539773/196125048-a510d89f-af0a-44c9-9fc9-8f59de2e4870.png)
 
