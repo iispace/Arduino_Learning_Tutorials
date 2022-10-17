@@ -26,8 +26,7 @@
 - Board: NANO 33 IoT
 - Framework: Arduino
 - External Libraries: Servo, ThingSpeak, WiFiNINA
-  <br>![image](https://user-images.githubusercontent.com/24539773/196130832-361869a0-7b5f-4159-92f5-91269914a8f6.png)
-  <br><center><img src="https://user-images.githubusercontent.com/24539773/196130832-361869a0-7b5f-4159-92f5-91269914a8f6.png" width="400" height="300"></center>
+  <br><center><img src="https://user-images.githubusercontent.com/24539773/196130832-361869a0-7b5f-4159-92f5-91269914a8f6.png" width="500" height="400"></center>
 
 ## 4. Source code
 - [main.cpp](https://github.com/iispace/IoT/blob/main/Hydrogen_Prod/main.cpp)
