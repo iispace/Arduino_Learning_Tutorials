@@ -23,6 +23,7 @@
 ## 3. IDE
 - IDE: PlatformIO
   <br>![image](https://user-images.githubusercontent.com/24539773/196131306-1eaf5d87-9d2f-4f19-916e-f541fe38f737.png)
+  <br><center><img src="https://user-images.githubusercontent.com/24539773/196131306-1eaf5d87-9d2f-4f19-916e-f541fe38f737" width="500" height="450"></center>
 - Board: NANO 33 IoT
 - Framework: Arduino
 - External Libraries: Servo, ThingSpeak, WiFiNINA
