@@ -8,6 +8,7 @@
  -  Frame: Aluminum profile(40mm x 40mm)
  -  Serve motor: MG996R (180 degree)
  -  MOSFET module: IRF520
+    <br><center><img src="https://user-images.githubusercontent.com/24539773/196126013-d468d98e-1329-424f-954f-2957cacb88dc.png" width="200" height="200"></center>
     <br>![image](https://user-images.githubusercontent.com/24539773/196126013-d468d98e-1329-424f-954f-2957cacb88dc.png)
  -  Capacitor: 470uF, 16V
  -  Hydrogen container: Syringe without needle
