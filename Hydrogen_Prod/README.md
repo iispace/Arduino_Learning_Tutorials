@@ -20,6 +20,9 @@
 
 ## 2. Schematics
 <br><center><img src="https://user-images.githubusercontent.com/24539773/196136024-046e4035-a7d5-4530-87c1-c7475ac1a868.png" width="800" height="500"></center>
+<br><center><img src="https://user-images.githubusercontent.com/24539773/196137880-42384489-6d44-42a2-8436-636a1aa5b105.png" width="800" height="500"></center>
+
+
 ## 3. IDE
 - IDE: PlatformIO
   <br><center><img src="https://user-images.githubusercontent.com/24539773/196131306-1eaf5d87-9d2f-4f19-916e-f541fe38f737.png" width="300" height="200"></center>
