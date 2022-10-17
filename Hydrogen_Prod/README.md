@@ -1,5 +1,6 @@
 # Hydrogen Production using Solar Cell 
 
+
 ## 1. Materials
  - Board: Arduino Nano 33 IoT x 1 
  - Solar Cell: 12V 430mA (165mm x 210mm) x 1
@@ -19,5 +20,12 @@
 
 ## 2. Schematics
 
-## 3. Source code
+## 3. IDE
+- IDE: PlatformIO
+- Board: NANO 33 IoT
+- Framework: Arduino
+- External Libraries: Servo, ThingSpeak, WiFiNINA
+  <br>![image](https://user-images.githubusercontent.com/24539773/196130832-361869a0-7b5f-4159-92f5-91269914a8f6.png)
+
+## 4. Source code
 - [main.cpp](https://github.com/iispace/IoT/blob/main/Hydrogen_Prod/main.cpp)
