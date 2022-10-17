@@ -7,6 +7,8 @@
 
 
  - Solar Cell: 12V 430mA (165mm x 210mm) x 1
+   <br>![image](https://user-images.githubusercontent.com/24539773/196139610-4e6d90d5-6e4b-46d4-8e78-0af7e12ff71a.png)
+
  -  Potentiometer: Slide potentiometer(10Kohm, 60mm) x 2
  -  Battery: 18650 Lithium polymer battery (3.65V, 2850mAh) x 1
  -  Frame: Aluminum profile(40mm x 40mm) 
