@@ -2,7 +2,7 @@
 
 
 ## 1. Materials
- - Board: Arduino Nano 33 IoT x 1 
+ - Board: [Arduino Nano 33 IoT](https://store-usa.arduino.cc/products/arduino-nano-33-iot) x 1 
    <br>![image](https://user-images.githubusercontent.com/24539773/196139174-9f35df38-fccd-4a61-90d6-cf9083055df7.png)
 
 
