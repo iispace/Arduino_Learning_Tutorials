@@ -18,6 +18,8 @@
 
 
  -  Frame: Aluminum profile(size of 40mm x 40mm, Length 300mm x 1, 150mm x 1 ) 
+    <br>![image](https://user-images.githubusercontent.com/24539773/196143647-7780ec18-cb9c-42e8-8c5e-1da83c12dcef.png)
+
  -  Serve motor: MG996R (180 degree) x 2
     <br>![image](https://user-images.githubusercontent.com/24539773/196140738-d56a92d2-846e-47ed-a68b-455eb37a92dd.png)
 
