@@ -30,6 +30,9 @@
 
  -  Cloud for data collection: ThingSpeak
  -  BreadBoard: mini breadboard(170 pins) x 2, breadboard(400 pins) x 1 
+ -  3D Printing materials
+    <br>![image](https://user-images.githubusercontent.com/24539773/196142578-59014d55-f3eb-4a76-bcc3-9f58dda46296.png)
+
 
 ## 2. Schematics
 <br><center><img src="https://user-images.githubusercontent.com/24539773/196136024-046e4035-a7d5-4530-87c1-c7475ac1a868.png" width="800" height="500"></center>
