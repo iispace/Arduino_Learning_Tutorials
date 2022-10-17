@@ -19,7 +19,9 @@
 
  -  MOSFET module: IRF520 x 1
     <br><center><img src="https://user-images.githubusercontent.com/24539773/196126013-d468d98e-1329-424f-954f-2957cacb88dc.png" width="200" height="200"></center>
- -  Capacitor: (470uF, 16V) x x
+ -  Capacitor: (470uF, 16V) x 2
+    <br>![image](https://user-images.githubusercontent.com/24539773/196141943-f7f55970-9b65-4627-8c66-d29f4d0bb8db.png)
+
  -  Gas container: 20ml Syringe without needle x 2 (One for hydrogen, the other for oxgen)
  -  Limit Switch: Micro Limit Switch (20mm x 10mm x 4mm) x 1
     <br>![image](https://user-images.githubusercontent.com/24539773/196125048-a510d89f-af0a-44c9-9fc9-8f59de2e4870.png)
