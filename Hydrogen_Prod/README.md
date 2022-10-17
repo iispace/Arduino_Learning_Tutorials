@@ -3,7 +3,8 @@
 
 ## 1. Materials
  - Board: Arduino Nano 33 IoT x 1 
- -<br>![image](https://user-images.githubusercontent.com/24539773/196138933-ed8f987a-e3c0-4784-9334-52c90f0e80d9.png)
+   <br>![image](https://user-images.githubusercontent.com/24539773/196139174-9f35df38-fccd-4a61-90d6-cf9083055df7.png)
+
 
  - Solar Cell: 12V 430mA (165mm x 210mm) x 1
  -  Potentiometer: Slide potentiometer(10Kohm, 60mm) x 2
