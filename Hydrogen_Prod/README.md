@@ -23,6 +23,8 @@
     <br>![image](https://user-images.githubusercontent.com/24539773/196141943-f7f55970-9b65-4627-8c66-d29f4d0bb8db.png)
 
  -  Gas container: 20ml Syringe without needle x 2 (One for hydrogen, the other for oxgen)
+    <br>![image](https://user-images.githubusercontent.com/24539773/196142093-68618e82-0b3f-4c0b-a6c3-c265447f8009.png)
+
  -  Limit Switch: Micro Limit Switch (20mm x 10mm x 4mm) x 1
     <br>![image](https://user-images.githubusercontent.com/24539773/196125048-a510d89f-af0a-44c9-9fc9-8f59de2e4870.png)
 
