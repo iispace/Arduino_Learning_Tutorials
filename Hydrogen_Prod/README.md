@@ -13,7 +13,7 @@
     <br><center><img src="https://user-images.githubusercontent.com/24539773/196139798-0f99e40f-3033-4aea-8e89-70e18fa872e2.png" width="300" height="150"></center>
 
  -  Battery: 18650 Lithium polymer battery (3.65V, 2850mAh) x 1
- -  Frame: Aluminum profile(40mm x 40mm) 
+ -  Frame: Aluminum profile(size of 40mm x 40mm, Length 300mm x 1, 150mm x 1 ) 
  -  Serve motor: MG996R (180 degree) x 2
     <br>![image](https://user-images.githubusercontent.com/24539773/196140738-d56a92d2-846e-47ed-a68b-455eb37a92dd.png)
 
