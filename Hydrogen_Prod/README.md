@@ -13,7 +13,7 @@
     <br><center><img src="https://user-images.githubusercontent.com/24539773/196139798-0f99e40f-3033-4aea-8e89-70e18fa872e2.png" width="300" height="150"></center>
 
  -  Battery: 18650 Lithium polymer battery (3.65V, 2850mAh) x 1, 18650 Battery holder x 1
-    <br><center><img src="https://user-images.githubusercontent.com/24539773/196142917-96c628a4-c243-45d7-97d8-1ee9a2eac63f.png" width="200" height="150"></center>
+    <br><center><img src="https://user-images.githubusercontent.com/24539773/196142917-96c628a4-c243-45d7-97d8-1ee9a2eac63f.png" width="180" height="130"></center>
     <br>![image](https://user-images.githubusercontent.com/24539773/196143255-030dae8d-5aaf-44dc-a31b-cfddcaa98608.png)
 
 
