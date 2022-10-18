@@ -1,7 +1,7 @@
 # Hydrogen Production using Solar Cell 
 
 ## Demonstration
-<br>[<img src="https://user-images.githubusercontent.com/24539773/196378877-75bf2501-14fc-4cb7-88fe-4dcb460f93c6.png" width="100%">](https://user-images.githubusercontent.com/24539773/196376279-32f31e34-47ea-4e26-a1ec-ab6935458446.mp4)
+<br>[<img src="https://user-images.githubusercontent.com/24539773/196378877-75bf2501-14fc-4cb7-88fe-4dcb460f93c6.png" width="20%">](https://user-images.githubusercontent.com/24539773/196376279-32f31e34-47ea-4e26-a1ec-ab6935458446.mp4)
 
 ## 1. Materials
  - Board: [Arduino Nano 33 IoT](https://store-usa.arduino.cc/products/arduino-nano-33-iot) x 1 
