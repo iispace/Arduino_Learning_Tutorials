@@ -10,7 +10,7 @@
    <br>![image](https://user-images.githubusercontent.com/24539773/196139610-4e6d90d5-6e4b-46d4-8e78-0af7e12ff71a.png)
 
  -  Potentiometer: Slide potentiometer(10Kohm, 60mm) x 2
-    <br><center><img src="https://user-images.githubusercontent.com/24539773/196139798-0f99e40f-3033-4aea-8e89-70e18fa872e2.png" width="300" height="150"></center>
+    <br>![image](https://user-images.githubusercontent.com/24539773/196350969-8646e479-9e8a-47fc-9b25-ee3d71f4157f.png)
 
  -  Battery: 18650 Lithium polymer battery (3.65V, 2850mAh) x 1, 18650 Battery holder x 1
     <br>![image](https://user-images.githubusercontent.com/24539773/196349785-b9a09ef9-d343-412e-a822-a2fdb1dd49be.png)
