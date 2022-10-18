@@ -55,7 +55,7 @@
 
 
 ## 2. Schematics
-<br><center><img src="https://user-images.githubusercontent.com/24539773/196368969-68cba569-db56-4292-ad59-a46d1f8d5e06.png" width="700" height="450"></center>
+<br><center><img src="https://user-images.githubusercontent.com/24539773/196368969-68cba569-db56-4292-ad59-a46d1f8d5e06.png" width="700" height="420"></center>
 ![image](https://user-images.githubusercontent.com/24539773/196368969-68cba569-db56-4292-ad59-a46d1f8d5e06.png)
 
 The figure below shows only a general idea of the wire connection of the above schematics except for the battery charging parts which are the On/Off switch, battery, TP4056, and LM2596.
