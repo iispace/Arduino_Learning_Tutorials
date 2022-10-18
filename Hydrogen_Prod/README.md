@@ -17,8 +17,7 @@
 
 
  -  Frame: Aluminum profile(size of 40mm x 40mm, Length 300mm x 1, 150mm x 1 ) and two inner brakets 
-    <br>![image](https://user-images.githubusercontent.com/24539773/196143647-7780ec18-cb9c-42e8-8c5e-1da83c12dcef.png)
-    <br>![image](https://user-images.githubusercontent.com/24539773/196342645-c2c19511-9486-40a7-9dfa-8e017d8fcdb0.png)
+    <br>![image](https://user-images.githubusercontent.com/24539773/196350311-7adfaa03-97c6-4c93-b4c9-c62e0cd8cbb3.png)
 
  -  Serve motor: MG996R (180 degree) x 2
     <br>![image](https://user-images.githubusercontent.com/24539773/196140738-d56a92d2-846e-47ed-a68b-455eb37a92dd.png)
