@@ -1,7 +1,7 @@
 # Hydrogen Production using Solar Cell 
 
 ## Demonstration
-<br>[<img src="https://user-images.githubusercontent.com/24539773/196139174-9f35df38-fccd-4a61-90d6-cf9083055df7.png width="50%">](https://user-images.githubusercontent.com/24539773/196376279-32f31e34-47ea-4e26-a1ec-ab6935458446.mp4)
+<br>[<img src="https://user-images.githubusercontent.com/24539773/196139174-9f35df38-fccd-4a61-90d6-cf9083055df7.png" width="50%">](https://user-images.githubusercontent.com/24539773/196376279-32f31e34-47ea-4e26-a1ec-ab6935458446.mp4)
 
 
 
