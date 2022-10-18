@@ -42,6 +42,10 @@
 
  -  3D Printing materials
     <br>![image](https://user-images.githubusercontent.com/24539773/196142578-59014d55-f3eb-4a76-bcc3-9f58dda46296.png)
+    
+  -  White faced hardboardsheet
+     <br>![image](https://user-images.githubusercontent.com/24539773/196353788-55b3b72c-7d84-47ef-b806-3e516b995f52.png)
+
 
 
 ## 2. Schematics
