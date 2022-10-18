@@ -56,7 +56,7 @@
 
 ## 2. Schematics
 <br><center><img src="https://user-images.githubusercontent.com/24539773/196136024-046e4035-a7d5-4530-87c1-c7475ac1a868.png" width="800" height="500"></center>
-<br><center><img src="https://user-images.githubusercontent.com/24539773/196357747-dabffaf7-d9ec-4757-9206-106aee9cf97c.png" width="900" height="500"></center>
+<br><center><img src="https://user-images.githubusercontent.com/24539773/196358283-7389504e-3d19-4e49-b7f1-f55cd1048d6f.png" width="900" height="500"></center>
 
 
 ## 3. IDE
