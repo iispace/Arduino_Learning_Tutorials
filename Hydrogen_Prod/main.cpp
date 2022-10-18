@@ -1,3 +1,6 @@
+/*
+* Solar tracker reference: https://www.thingiverse.com/thing:53321
+*/
 #include <Arduino.h>
 #include <Servo.h>
 #include <ThingSpeak.h>
