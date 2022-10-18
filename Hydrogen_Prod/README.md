@@ -23,6 +23,8 @@
 
  -  Serve motor: MG996R (180 degree) x 2
     <br>![image](https://user-images.githubusercontent.com/24539773/196140738-d56a92d2-846e-47ed-a68b-455eb37a92dd.png)
+    <br>![image](https://user-images.githubusercontent.com/24539773/196348289-68f05b2b-3754-41da-ab18-15733a44907c.png)
+
 
  -  MOSFET module: IRF520 x 1
     <br><center><img src="https://user-images.githubusercontent.com/24539773/196126013-d468d98e-1329-424f-954f-2957cacb88dc.png" width="200" height="200"></center>
