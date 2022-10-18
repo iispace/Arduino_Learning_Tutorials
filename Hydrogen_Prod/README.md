@@ -39,6 +39,8 @@
  -  Limit Switch: Micro Limit Switch (20mm x 10mm x 4mm) x 1
     <br>![image](https://user-images.githubusercontent.com/24539773/196352560-17552857-d3d2-477f-96f2-989258d99ee5.png)
 
+ -  On/Off switch
+    <br>![image](https://user-images.githubusercontent.com/24539773/196354352-5f242a60-c9c4-473d-8d55-353b666bb7b5.png)
 
  -  Cloud for data collection: ThingSpeak
  -  BreadBoard: mini breadboard(170 pins) x 2, breadboard(400 pins) x 1 
