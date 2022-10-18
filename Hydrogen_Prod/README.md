@@ -56,7 +56,7 @@
 
 ## 2. Schematics
 <br><center><img src="https://user-images.githubusercontent.com/24539773/196361664-ca222080-3eaa-48bd-ae64-b8ef46de74b3.png" width="800" height="600"></center>
-The figure below shows only a general idea of the wire connection of the schematics. In the below figure, the On/Off switch is missing.
+The figure below shows only a general idea of the wire connection of the above schematics except for the On/Off switch.
 <br><center><img src="https://user-images.githubusercontent.com/24539773/196358283-7389504e-3d19-4e49-b7f1-f55cd1048d6f.png" width="900" height="500"></center>
 
 
