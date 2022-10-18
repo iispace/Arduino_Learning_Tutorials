@@ -47,7 +47,7 @@
     <br><center><img src="https://user-images.githubusercontent.com/24539773/196348869-1e9d2e9c-a9f2-4d7d-b831-109af46239d8.png" width="400" height="150"></center>
 
  -  3D Printing materials
-    <br>![image](https://user-images.githubusercontent.com/24539773/196142578-59014d55-f3eb-4a76-bcc3-9f58dda46296.png)
+    <br>![image](https://user-images.githubusercontent.com/24539773/196356253-ee5e9109-9289-4f88-8111-bd555e74a5ee.png)
     
   -  White faced hardboardsheet
      <br>![image](https://user-images.githubusercontent.com/24539773/196353788-55b3b72c-7d84-47ef-b806-3e516b995f52.png)
