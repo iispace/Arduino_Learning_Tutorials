@@ -57,7 +57,7 @@
 ## 2. Schematics
 <br><center><img src="https://user-images.githubusercontent.com/24539773/196368969-68cba569-db56-4292-ad59-a46d1f8d5e06.png" width="700" height="400"></center>
 The figure below shows only a general idea of the wire connection of the above schematics except for the battery charging parts which are the On/Off switch, battery, TP4056, and LM2596.
-<br><center><img src="https://user-images.githubusercontent.com/24539773/196358283-7389504e-3d19-4e49-b7f1-f55cd1048d6f.png" width="900" height="500"></center>
+<br><center><img src="https://user-images.githubusercontent.com/24539773/196358283-7389504e-3d19-4e49-b7f1-f55cd1048d6f.png" width="700" height="350"></center>
 
 
 ## 3. IDE
