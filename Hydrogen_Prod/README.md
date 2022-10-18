@@ -18,6 +18,10 @@
 
  -  Frame: Aluminum profile(size of 40mm x 40mm, Length 300mm x 1, 150mm x 1 ) and two inner brakets 
     <br>![image](https://user-images.githubusercontent.com/24539773/196350311-7adfaa03-97c6-4c93-b4c9-c62e0cd8cbb3.png)
+    
+ -  Frame: Din Rail (Length: 230mm)
+    <br>![image](https://user-images.githubusercontent.com/24539773/196353980-31e0c2aa-33df-4bc7-980d-269f3ed3f85c.png)
+
 
  -  Serve motor: MG996R (180 degree) x 2
     <br>![image](https://user-images.githubusercontent.com/24539773/196140738-d56a92d2-846e-47ed-a68b-455eb37a92dd.png)
