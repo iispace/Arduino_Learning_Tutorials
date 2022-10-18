@@ -3,7 +3,7 @@
 ## Demonstration
 <br>[<img src="https://user-images.githubusercontent.com/24539773/196384219-fc0ae0c9-a0ba-4289-87fd-c0bd924928cb.png">](https://user-images.githubusercontent.com/24539773/196376279-32f31e34-47ea-4e26-a1ec-ab6935458446.mp4) 
 
-## 1. Materials
+### 1. Materials
  - Board: [Arduino Nano 33 IoT](https://store-usa.arduino.cc/products/arduino-nano-33-iot) x 1 
    <br><center><img src="https://user-images.githubusercontent.com/24539773/196139174-9f35df38-fccd-4a61-90d6-cf9083055df7.png" width="200" height="80"></center>
 
@@ -56,13 +56,13 @@
 
 
 
-## 2. Schematics
+### 2. Schematics
 <br><center><img src="https://user-images.githubusercontent.com/24539773/196371457-1cb8d361-acf9-4144-a707-81acd359aa04.png" width="800" height="400"></center>
 The circuit figure below shows only a general idea of the wire connection of the above schematics except for the battery charging parts and another solar cell attached to hydrogen fuel cell. (The circuit figure was created on Thinkercad.com)
 <br><center><img src="https://user-images.githubusercontent.com/24539773/196358283-7389504e-3d19-4e49-b7f1-f55cd1048d6f.png" width="700" height="400"></center>
 
 
-## 3. IDE
+### 3. IDE
 - IDE: PlatformIO
   <br><center><img src="https://user-images.githubusercontent.com/24539773/196131306-1eaf5d87-9d2f-4f19-916e-f541fe38f737.png" width="300" height="200"></center>
 - Board: NANO 33 IoT
@@ -70,5 +70,5 @@ The circuit figure below shows only a general idea of the wire connection of the
 - External Libraries: Servo, ThingSpeak, WiFiNINA
   <br><center><img src="https://user-images.githubusercontent.com/24539773/196130832-361869a0-7b5f-4159-92f5-91269914a8f6.png" width="850" height="400"></center>
 
-## 4. Source code
+### 4. Source code
 - [main.cpp](https://github.com/iispace/IoT/blob/main/Hydrogen_Prod/main.cpp)
