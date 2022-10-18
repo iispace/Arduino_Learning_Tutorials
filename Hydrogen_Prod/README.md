@@ -33,8 +33,7 @@
     <br>![image](https://user-images.githubusercontent.com/24539773/196142093-68618e82-0b3f-4c0b-a6c3-c265447f8009.png)
 
  -  Limit Switch: Micro Limit Switch (20mm x 10mm x 4mm) x 1
-    <br>![image](https://user-images.githubusercontent.com/24539773/196125048-a510d89f-af0a-44c9-9fc9-8f59de2e4870.png)
-    <br>![image](https://user-images.githubusercontent.com/24539773/196144259-121463aa-755d-4f15-8f19-072e7159a8f2.png)
+    <br>![image](https://user-images.githubusercontent.com/24539773/196352560-17552857-d3d2-477f-96f2-989258d99ee5.png)
 
 
  -  Cloud for data collection: ThingSpeak
