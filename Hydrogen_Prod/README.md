@@ -1,4 +1,4 @@
-# Hydrogen Production using Solar Cell 
+# Electric Current Monitoring System for Hydrogen Production 
 
 ## Demonstration
 <br>[<img src="https://user-images.githubusercontent.com/24539773/196384219-fc0ae0c9-a0ba-4289-87fd-c0bd924928cb.png">](#) 
