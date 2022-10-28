@@ -1,141 +1,252 @@
-/*
-* Solar tracker reference: https://www.thingiverse.com/thing:53321
-*/
 #include <Arduino.h>
-#include <Servo.h>
-#include <ThingSpeak.h>
 #include <WiFiNINA.h>
+#include <ThingSpeak.h>
+#include <Adafruit_INA219.h>
+#include <Adafruit_SSD1306.h>
+#include <Adafruit_GFX.h>
+#include <Wire.h>
+#include <SPI.h>
 
-#define servoV 10
-#define servoH 9
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 32
+#define OLED_RESET    -1 // Reset pin # (or -1 if sharing Arduino reset pin)
+#define I2C_OLED 0x3C    // OLED I2C 주소
+#define I2C_INA219 0x40  // INA219 전류센서 I2C 주소 
+
 #define LIMITSW 8
 #define MOSFET 7
+#define GREEN_LED 6
+#define RED_LED 5
 
-Servo horizontal;
-Servo vertical;
 WiFiClient client;
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+Adafruit_INA219 ina219(I2C_INA219);
 
-// LDR pin connection
-int ldrlt = 0;
-int ldrld = 1;
-int ldrrt = 2;
-int ldrrd = 3;
-
-//WiFi Connection Info
-char ssid[] = "SSID";
-char pass[] = "PASSWORD";
-unsigned long ChannelNumber = ThingSpeak_ChannelNumber;
-const char* APIKey = "THINGSPEAK_WRITEAPIKEY";
+/*
+ * WiFi Connection Info
+*/ 
+char ssid[] = "mySSID";
+char pass[] = "myPassword";
+unsigned long myChannelNumber = 123456;  // ThingSpeak Channel Number
+const char* myWriteAPIKey = "myWriteAPIKEY";
 int keyIndex = 0; // your network key index number (needed only for WEP)
 
-// Servo motors' initial angle
-int servoh = 90;
-int servov = 90;
-///
-void GetVerticalAngle(int _avt, int _avd, int _dvert, int _tol){
-    // check if the diffirence is in the tolerance else change vertical angle
-    if (-1*_tol > _dvert || _dvert > _tol) {
-        if (_avt > _avd)
-        {
-            servov = ++servov;
-            if (servov > 180) 
-            { 
-                servov = 180;
-            }
-        }
-        else if (_avt < _avd)
-        {
-            servov= --servov;
-            if (servov < 0)
-            {
-                servov = 0;
-            }
-        }
-    }
-}
-  
-void GetHorizontalAngle(int _avl, int _avr, int _dhoriz, int _tol){
-// check if the diffirence is in the tolerance else change horizontal angle
-  if (-1*_tol > _dhoriz || _dhoriz > _tol) 
-  {
-    if (_avl > _avr)
-    {
-      servoh = --servoh;
-      if (servoh < 0)
-      {
-      	servoh = 0;
-      }
-    }
-    else if (_avl < _avr)
-    {
-      servoh = ++servoh;
-       if (servoh > 180)
-       {
-       	servoh = 180;
-       }
-    }
-    else if (_avl = _avr)
-    {
-      // do nothing
-    }  
+/*
+ * ThingSpeak Restriction
+*/
+long lastConnectionTime = 0;
+const int ThingSpeakInterval = 20 * 1000;  // 20 seconds interval for ThingSpeak update
+
+/*
+ * INA219 mA Sensor
+*/
+uint32_t total_sec = 0;
+float total_mA = 0.0;
+
+void printSIValue(float value, char* units, int precision, int maxWidth){
+  // Print a value in SI units with the units left justified and value right justified.
+  // Will switch to milli prefix if value is below 1.
+
+  // Add milli prefix if low value
+  if(fabs(value) < 1.0){
+    display.print('m');
+    maxWidth -= 1;
+    value *= 1000.0;
+    precision = max(0, precision-3);
   }
+
+  // Print units
+  display.print(units);
+  maxWidth -= strlen(units);
+
+  // Leave room for negative sign if value is negative
+  if (value < 0.0){
+    maxWidth -= 1;
+  }
+
+  // Find how many digits are in value
+  int digits = ceil(log10(fabs(value)));
+  if(fabs(value) < 1.0){
+    digits = 1; // Leave room for 0 when value is below 0.
+  }
+
+  // Handle if not enough width to display value, just print dashes.
+  if (digits > maxWidth){
+    // Find width with dashes (and extra dash for negative values)
+    for (int i=0; i < maxWidth; ++i){
+      display.print('-');
+    }
+    if (value < 0.0){
+      display.print('-');
+    }
+    return;
+  }
+  // Compute actual precision for printed value based on space left after
+  // printing digits and decimal point.  Clamp within 0 to desired precision.
+  int actualPrecision = constrain(maxWidth-digits-1, 0, precision);
+
+  // Compute how much padding to add to right justify.
+  int padding = maxWidth-digits-1-actualPrecision;
+  for (int i=0; i < padding; ++i) {
+    display.print(' ');
+  }
+
+  // Finally, print the value!
+  display.print(value, actualPrecision);
 }
 
-int CheckLimitSwitch(){
+void PrintStrOLED(int _size, const char* _str){
+  
+  display.clearDisplay();
+  display.display();
+  delay(500);
+
+  display.setTextSize(_size);
+  display.invertDisplay(false);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(0,0);
+  display.println(F(_str));
+
+  display.display();
+}
+
+void CheckLimitSwitch(){
   int swValue = digitalRead(LIMITSW);
   Serial.println("****************************************");
   Serial.print("LIMIT Switch is "); Serial.println(swValue);
   Serial.println("****************************************");
   delay(100);
-  // The default setting of the Limit Switch is COM-NC, which means normal value of Limist switch is HIGH.
-  // When the Limit switch is in normal state, send HIGH signal to the MOSFET so that electric current can flow to Hydrogen fuel cell.
-  // When the Limit switch is pushed, the value is changed to LOW from HIGH and this time send LOW signal to the MOSFET to cut off the electric current to Hydrogen fuel cell.
+  // 스위치 기본 연결 상태: COM-NC 
+  // 평소 스위치 값: HIGH ==> MOSFET HIGH ==> 수소연료전지에 전원 인가
+  // 스위치 눌렸을 때 값: LOW ==> MOSFET LOW ==> 수소연료전지에 전원 차단
   if(swValue == LOW){         
-    digitalWrite(MOSFET, LOW);  // (COM - NO)
+    digitalWrite(MOSFET, LOW);  // 스위치가 눌린 상태 (COM - NO)
+    delay(10);
+    digitalWrite(GREEN_LED, LOW);
+    delay(10);
+    digitalWrite(RED_LED, HIGH);   
+    delay(10);
     Serial.println("MOSFET OFF");
   }
-  else if (swValue == HIGH){    // (COM - NC)
+  else if (swValue == HIGH){    // 스위치가 눌리지 않은 평소 상태 (COM - NC)
     digitalWrite(MOSFET, HIGH);
+    delay(10);
+    digitalWrite(RED_LED, LOW); 
+    delay(10);   
+    digitalWrite(GREEN_LED, HIGH);   
+    delay(10);
     Serial.println("MOSFET ON");
   }
-  return swValue;
 }
 
-void SendDataToThingSpeak(int value){
-  ThingSpeak.setField(1, value);  // set value of Field No. 1 in the ThingSpeak Channel. 
-  int x = ThingSpeak.writeFields(ChannelNumber, APIKey);
+void SendDataToThingSpeak(float v1, float v2, float v3){
+  ThingSpeak.setField(1, v1);  // Field 번호 "1"의 값을 value로 설정함 (Volt)
+  ThingSpeak.setField(2, v2);  // Field 번호 "2"의 값을 value로 설정함 (mA)
+  ThingSpeak.setField(3, v3);  // Field 번호 "3"의 값을 value로 설정함 (power_mW)
+  int x = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
   if (x == 200){
     Serial.println("Channel update successful");
+    String msg = "Channel update successful " + String(x);
+    PrintStrOLED(1, msg.c_str());
   }
   else{
     Serial.println("Problem updating channel. HTTP error code: " + String(x));
+    String msg = "Problem updating channel. HTTP error code: " + String(x);
+
+    PrintStrOLED(1, msg.c_str());
   }
 }
 
 
+struct measurementPower {
+  float Volt;
+  float mA;
+  float power_mW;
+  float total_mAH;
+};
+
+struct measurementPower update_power_display(){
+  struct measurementPower output;
+
+  // Read voltage and current from INA219
+  float shuntvoltage = ina219.getShuntVoltage_mV();
+  float busvoltage = ina219.getBusVoltage_V();
+  float current_mA = ina219.getCurrent_mA();
+
+  // Compute load voltage, power, and milliamp-hours.
+  float loadvoltage = busvoltage + (shuntvoltage / 1000);
+  float power_mW = loadvoltage * current_mA;
+  total_mA += current_mA;
+  total_sec += 1;
+  float total_mAH = total_mA / 3600.0;
+
+  // Update display
+  display.clearDisplay();
+  display.setCursor(0,0);
+
+  // Mode 0, display volt and amps
+  printSIValue(loadvoltage, "V:", 2, 10);
+  display.setCursor(0,12);  // Original value is display.setCursor(0,16);
+  printSIValue(current_mA/1000.0, "A:", 5, 10);
+
+  display.display();
+
+  output.Volt = loadvoltage;
+  output.mA = current_mA;
+  output.power_mW = power_mW;
+  output.total_mAH = total_mAH;
+
+  return output;
+}
+
 void setup() {
+
   pinMode(LIMITSW, INPUT);
   pinMode(MOSFET, OUTPUT);
-  
+  pinMode(RED_LED, OUTPUT);
+  pinMode(GREEN_LED, OUTPUT);
+
   Serial.begin(9600);
+
   WiFi.begin(ssid, pass);
+
+  if(!display.begin(SSD1306_SWITCHCAPVCC, I2C_OLED)){
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;);
+  }
+
+  if (!ina219.begin()){
+    Serial.println("Failed to find INA219 chip");
+    PrintStrOLED(1, "Failed to find INA219 chip");
+    while(1) {delay(10);}
+  }
+  Serial.println("INA219 Current sensor connected!");
+  PrintStrOLED(1, "INA219 Connected!");
 
   while(WiFi.status() != WL_CONNECTED){
     delay(1000);
     Serial.print(".");
+    PrintStrOLED(1, "...");
   }
-
-  while(!Serial);  // for debugging only.  Comment out this line for production
-
   Serial.println("\nWiFi Connected!!");
+  PrintStrOLED(1, "WiFi Connected!!");
+
   ThingSpeak.begin(client);
   
-  vertical.attach(servoV); 
-  vertical.write(90);    // == vertical.writeMicroseconds(1500);
-  delay(15);
-  horizontal.attach(servoH);
-  horizontal.write(90); // == horizontal.writeMicroseconds(1500);
-  delay(2000);
+  // 동작 시작 표시 점멸
+  for(int i=0; i<5; i++){
+    digitalWrite(GREEN_LED, HIGH);
+    delay(100);
+    digitalWrite(RED_LED, HIGH);
+    delay(100);
+    digitalWrite(GREEN_LED, LOW);
+    delay(100);
+    digitalWrite(RED_LED, LOW);
+    delay(100);
+  }
+
+  digitalWrite(GREEN_LED, HIGH);
+  delay(1000);
 }
 
 void loop() {
@@ -146,68 +257,19 @@ void loop() {
       WiFi.begin(ssid, pass);
       Serial.print("."); delay(1000);
     }
-    Serial.println("WiFi Connected!!!");
-  }
-  // Check out status of the Limit Switch to cut out or to flow electric current to Hydrogen fuel cell.
-  int value = CheckLimitSwitch();
-
-  // Send certain value(i.e., 100 in this example) to ThingSpeak if Limit switch is pushed.
-  /* !!! CAUTION !!! 
-     The minimum interval for sending data to ThingSpeak is 20 seconds (20000 in millseconds).
-     Therefore, do not push the Limit switch within 20 secondds again!!! 
-  */
-  
-  if (value == 0){
-    int valueToSend = 100;
-    SendDataToThingSpeak(valueToSend);
+    Serial.println("WiFi Connected!!!");  
+    PrintStrOLED(1, "WiFi Connected!!");
   }
 
-  // Read LDR sensors values
-  int lt = analogRead(ldrlt);
-  int ld = analogRead(ldrld);
-  int rt = analogRead(ldrrt);
-  int rd = analogRead(ldrrd);
+  // 리미트 스위치 상태 확인 => 연료전지 전원 차단(RED LED ON and GREEN LED OFF) 또는 인가(RED LED OFF and GREEN LED ON)
+  CheckLimitSwitch();
+  delay(1000);
 
-  // Serial.println("===========================================");
-  // Serial.print("ldrlt: "); Serial.print(lt); Serial.print(", ");
-  // Serial.print("ldrld: "); Serial.print(ld); Serial.print(", ");
-  // Serial.print("ldrrt: "); Serial.print(rt); Serial.print(", ");
-  // Serial.print("ldrrd: "); Serial.print(rd); Serial.println();
-
-  delay(50);
-
-  //int dtime = analogRead(4) / 20;  // delay time per loop. Remove comment mark if you install a potentiometer to A4 pin and comment out the very next line. 
-  int dtime = 20;
-  //int tol = analogRead(5) / 4;     // tolerance of LDR sensor to activate servo. Remove comment mark if you install a potentiometer to A5 pin and comment out the very next line.
-  int tol = 50;
-
-  // Serial.print("dtime: "); Serial.print(dtime); Serial.print(", ");
-  // Serial.print("tol: "); Serial.print(tol); Serial.println();
-  // Serial.println("--------------------------------------------");
-
-  delay(50);
-  
-  // average of LDR values for each direction (UP, DOWN, LEFT, RIGHT)
-  int avt = (lt + rt) / 2; // average LDR values of UP direction
-  int avd = (ld + rd) / 2; // average LDR values of DOWN direction
-  int avl = (lt + ld) / 2; // average LDR values of LEFT direction
-  int avr = (rt + rd) / 2; // average LDR values of RIGHT direction
-
-  int dvert = avt - avd; // Difference betwwen UP and DOWN
-  int dhoriz = avl - avr;// Difference between LEFT and RIGHT
-
-  //Serial.print("(avt: "); Serial.print(avt); Serial.print(",  "); Serial.print("avd: "); Serial.print(avd); Serial.print("),  ");  
-  //Serial.print("(avl: "); Serial.print(avl); Serial.print(",  "); Serial.print("avr: "); Serial.print(avr); Serial.println(")");
-  //Serial.print("dvert: "); Serial.print(dvert); Serial.print(", "); Serial.print("dhoriz: "); Serial.println(dhoriz); 
-  //Serial.println("--------------------------------------------");
-
-  GetVerticalAngle(avt, avd, dvert, tol);
-  vertical.write(servov);
-  Serial.print("servov = ");Serial.println(servov);
-  
-  GetHorizontalAngle(avl, avr,dhoriz, tol);
-  horizontal.write(servoh);
-  Serial.print("servoh = ");Serial.println(servoh);Serial.println();
-  
-  delay(dtime); 
+  measurementPower measurement = update_power_display();
+  long now = millis();
+  if (now - lastConnectionTime > ThingSpeakInterval) {
+    SendDataToThingSpeak(measurement.Volt, measurement.mA, measurement.power_mW);
+    lastConnectionTime = now;
+  }
+  delay(1000);
 }
