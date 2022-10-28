@@ -10,13 +10,7 @@
    <br><center><img src="https://user-images.githubusercontent.com/24539773/196139174-9f35df38-fccd-4a61-90d6-cf9083055df7.png" width="200" height="80"></center>
 
 
- - Solar Cell: 12V 430mA (165mm x 210mm) x 1
-   <br>![image](https://user-images.githubusercontent.com/24539773/196139610-4e6d90d5-6e4b-46d4-8e78-0af7e12ff71a.png)
-
- -  Potentiometer: Slide potentiometer(10Kohm, 60mm) x 2
-    <br>![image](https://user-images.githubusercontent.com/24539773/196350969-8646e479-9e8a-47fc-9b25-ee3d71f4157f.png)
-
- -  Battery: 18650 Lithium polymer battery (3.65V, 2850mAh) x 1, 18650 Battery holder x 1
+ -  Battery: 18650 Lithium polymer battery (3.65V, 2850mAh) x 1, 18650 Battery holder x 2
     <br>![image](https://user-images.githubusercontent.com/24539773/196349785-b9a09ef9-d343-412e-a822-a2fdb1dd49be.png)
 
 
@@ -26,17 +20,9 @@
  -  Frame: Din Rail (Length: 230mm)
     <br>![image](https://user-images.githubusercontent.com/24539773/196353980-31e0c2aa-33df-4bc7-980d-269f3ed3f85c.png)
 
-
- -  Serve motor: MG996R (180 degree) x 2
-    <br>![image](https://user-images.githubusercontent.com/24539773/196140738-d56a92d2-846e-47ed-a68b-455eb37a92dd.png)
-    <br><center><img src="https://user-images.githubusercontent.com/24539773/196348289-68f05b2b-3754-41da-ab18-15733a44907c.png" width="600" height="200"></center>
-
-
  -  MOSFET module: IRF520 x 1
     <br><center><img src="https://user-images.githubusercontent.com/24539773/196126013-d468d98e-1329-424f-954f-2957cacb88dc.png" width="200" height="200"></center>
- -  Capacitor: (470uF, 16V) x 2
-    <br>![image](https://user-images.githubusercontent.com/24539773/196141943-f7f55970-9b65-4627-8c66-d29f4d0bb8db.png)
-
+ 
  -  Gas container: 20ml Syringe without needle x 2 (One for hydrogen, the other for oxgen)
     <br>![image](https://user-images.githubusercontent.com/24539773/196142093-68618e82-0b3f-4c0b-a6c3-c265447f8009.png)
 
