@@ -25,10 +25,10 @@ Adafruit_INA219 ina219(I2C_INA219);
 /*
  * WiFi Connection Info
 */ 
-char ssid[] = "mySSID";
-char pass[] = "myPassword";
-unsigned long myChannelNumber = 123456;  // ThingSpeak Channel Number
-const char* myWriteAPIKey = "myWriteAPIKEY";
+char ssid[] = "yourSSID";
+char pass[] = "yourpassword";
+unsigned long myChannelNumber = yourThingSpeakChannelNumber;
+const char* myWriteAPIKey = "yourThingSpeakWriteAPIKey";
 int keyIndex = 0; // your network key index number (needed only for WEP)
 
 /*
@@ -116,11 +116,11 @@ void CheckLimitSwitch(){
   Serial.print("LIMIT Switch is "); Serial.println(swValue);
   Serial.println("****************************************");
   delay(100);
-  // 스위치 기본 연결 상태: COM-NC 
-  // 평소 스위치 값: HIGH ==> MOSFET HIGH ==> 수소연료전지에 전원 인가
-  // 스위치 눌렸을 때 값: LOW ==> MOSFET LOW ==> 수소연료전지에 전원 차단
+  // 스위치 기본 설정: COM-NC (=> 평소 HIGH 상태)
+  // 스위치 눌리지 않았을 때: HIGH => MOSFET에 HIGH 신호를 주어 수소연료전지에 전원 인가
+  // 스위치 눌렸을 때:        LOW =>  MOSFET에 LOW 신호를 주어 수소연료전지에 전원 차단
   if(swValue == LOW){         
-    digitalWrite(MOSFET, LOW);  // 스위치가 눌린 상태 (COM - NO)
+    digitalWrite(MOSFET, LOW);  // 스위치 눌린 상태 (COM - NO)
     delay(10);
     digitalWrite(GREEN_LED, LOW);
     delay(10);
@@ -128,7 +128,7 @@ void CheckLimitSwitch(){
     delay(10);
     Serial.println("MOSFET OFF");
   }
-  else if (swValue == HIGH){    // 스위치가 눌리지 않은 평소 상태 (COM - NC)
+  else if (swValue == HIGH){    // 스위치 눌리지 않은 상태 (COM - NC)
     digitalWrite(MOSFET, HIGH);
     delay(10);
     digitalWrite(RED_LED, LOW); 
@@ -232,8 +232,7 @@ void setup() {
   PrintStrOLED(1, "WiFi Connected!!");
 
   ThingSpeak.begin(client);
-  
-  // 동작 시작 표시 점멸
+
   for(int i=0; i<5; i++){
     digitalWrite(GREEN_LED, HIGH);
     delay(100);
@@ -261,7 +260,7 @@ void loop() {
     PrintStrOLED(1, "WiFi Connected!!");
   }
 
-  // 리미트 스위치 상태 확인 => 연료전지 전원 차단(RED LED ON and GREEN LED OFF) 또는 인가(RED LED OFF and GREEN LED ON)
+  // 리미트 스위치 상태 확인 => 연료전지 전원 차단(RED LED ON, GREEN LED OFF) 또는 인가(RED LED OFF, GREEN LED ON)
   CheckLimitSwitch();
   delay(1000);
 
