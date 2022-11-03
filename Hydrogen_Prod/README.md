@@ -19,20 +19,21 @@
     <p><img src="https://user-images.githubusercontent.com/24539773/199676305-f830c8d7-ada7-4f1d-a302-87a730b9ad4e.png" width="410" height="150"></p>
 
 - Din Rail: Din Rail(width: 35mm, length: 230mm) x 2
-    <p><img src="Pics/Dinrail.png" width="210" height="150"></p>
+    <p><img src="https://user-images.githubusercontent.com/24539773/199676420-168f8716-8592-412d-8923-ad88f3cbda1e.png" width="210" height="150"></p>
 
 - MOSFET module: IRF520 x 1
-    <p><img src="Pics/Mosfet_module.png" width="" height=""></p>
+    <p><img src="https://user-images.githubusercontent.com/24539773/199676474-6e7319d6-4cf5-4582-8719-50af9c6f3a77.png" width="" height=""></p>
 
 - Gas container: Syringe(20ml, without needle) x 2 (One for Hydrogen, the other for Oxygen)
-    <p><img src="Pics/Syringe.jpg" width="" height=""></p>
+    <p><img src="https://user-images.githubusercontent.com/24539773/199676537-722e8005-8d5c-4dda-b6b3-0358a30c7e4a.jpg" width="" height=""></p>
 
 - Switches
     - Limit Switch x 1
-        <p><img src="Pics/Limit_Switch.png" width="" height=""></p>
+        <p><img src="https://user-images.githubusercontent.com/24539773/199676590-3169ae67-6203-41e5-a930-8fd42fd4a95d.PNG" width="" height=""></p>
+            
     - On/Off Switch x 1
-        <p><img src="Pics/OnOff_Switch.png" width="" height=""></p>
-
+        <p><img src="https://user-images.githubusercontent.com/24539773/199676636-3cbb31cf-a0fe-4a1b-8f4b-ceb40eb740c0.png" width="" height=""></p>
+   
 - Breadboards
     - 170 pins x 2
         <p><img src="Pics/BB170.png" width="200" height=""></p>
