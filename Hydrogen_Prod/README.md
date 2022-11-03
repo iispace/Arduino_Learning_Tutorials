@@ -1,9 +1,8 @@
 # Electric Current Monitoring Device for Hydrogen Fuel Cell
 
 ## [Demonstration]
-
 <a href="https://www.youtube.com/watch?v=nK51Hw02U4Y" target="_blank">
-  <img src="Pics/pic1.png" width="200" height="300" align="left">
+  <img src="https://user-images.githubusercontent.com/24539773/199675720-ab348480-f1a2-4dec-bd7a-c85738e47eb8.png" width="200" height="300" align="left">
 </a>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <hr>
