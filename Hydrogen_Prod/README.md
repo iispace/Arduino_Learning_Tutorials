@@ -1,4 +1,4 @@
-# Electric Current Monitoring System for Hydrogen Production 
+# Electric Current Monitoring Device for Hydrogen Fuel Cell
 <hr>
 
 ## Demonstration
