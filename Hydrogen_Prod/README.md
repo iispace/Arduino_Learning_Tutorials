@@ -13,10 +13,10 @@
     ![Nano 33 IoT](https://user-images.githubusercontent.com/24539773/199675878-0c74c643-eb3e-45c0-8444-b8988ad9c63e.png)
 
 - Battery: 18650 Lithium Polymer Battery(3.6V, 2850mA) x 2 with Holder
-    <p><img src="Pics/Battery.png" width="200" height="170"></p>
+    <p><img src="https://user-images.githubusercontent.com/24539773/199676236-7f67ec33-d764-4940-b119-8ede25536cd7.png" width="200" height="170"></p>
 
 - Frame: Aluminum profile (40mmx40mm) with inner braket
-    <p><img src="Pics/Profile.png" width="410" height="150"></p>
+    <p><img src="https://user-images.githubusercontent.com/24539773/199676305-f830c8d7-ada7-4f1d-a302-87a730b9ad4e.png" width="410" height="150"></p>
 
 - Din Rail: Din Rail(width: 35mm, length: 230mm) x 2
     <p><img src="Pics/Dinrail.png" width="210" height="150"></p>
