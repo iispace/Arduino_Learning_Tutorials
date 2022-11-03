@@ -54,7 +54,7 @@
 
 ## [IDE]
     
-- IDE: PlatformIO
+- IDE: [PlatformIO](https://platformio.org/)
     <p><img src="https://user-images.githubusercontent.com/24539773/199676990-d7f82075-0775-4b61-88ef-88ac063ba88d.png" width="400" height=""></p>
     
 - Board: NANO 33 IoT
