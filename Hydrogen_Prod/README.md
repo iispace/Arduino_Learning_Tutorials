@@ -36,32 +36,31 @@
    
 - Breadboards
     - 170 pins x 2
-        <p><img src="Pics/BB170.png" width="200" height=""></p>
+        <p><img src="https://user-images.githubusercontent.com/24539773/199676725-6d18d358-8a53-4761-8aa6-42cc1314d643.png" width="200" height=""></p>
+        
     - 400 pins x 1
-        <p><img src="Pics/BB400.png" width="200" height=""></p>
-
+        <p><img src="https://user-images.githubusercontent.com/24539773/199676786-e5ecfc8b-c5f2-4e8f-a988-babe9306b475.png" width="200" height=""></p>
+        
 - 3D Printing materials
-    <p><img src="Pics/3DPrintings.png" width="200" height=""></p>
-
-- White faced hardboardsheet
-    <p><img src="Pics/WhiteFormBoard.png" width="400" height=""></p>
-
+    <p><img src="https://user-images.githubusercontent.com/24539773/199676830-5adc9346-0b58-417f-819f-64831fb46c86.png" width="200" height=""></p>
+    
 - Cloud for data collection: [ThingSpeak](https://thingspeak.com/)
 
 
 ## [Schematics]
 
-<p><img src="Pics/schematic.png" width="400" height=""></p>
+<p><img src="https://user-images.githubusercontent.com/24539773/199676935-a893b122-c23f-4107-8c47-1ddf29a60303.png" width="400" height=""></p>
+
 
 ## [IDE]
     
 - IDE: PlatformIO
-    <p><img src="Pics/platformIO.png" width="400" height=""></p>
-
+    <p><img src="https://user-images.githubusercontent.com/24539773/199676990-d7f82075-0775-4b61-88ef-88ac063ba88d.png" width="400" height=""></p>
+    
 - Board: NANO 33 IoT
 - Framework: Arduino
 - External Libraries: WiFiNINA, ThingSpeak, Adafruit INA219, Adafruit SSD1306, Adafruit GFX library
-    <p><img src="Pics/external_lib.png" width="400" height=""></p>
+    <p><img src="https://user-images.githubusercontent.com/24539773/199677029-55af4af4-2fb9-4857-9f5c-06cf35b7bf30.png" width="400" height=""></p>
 
 ## [Source Code]
 - [main.cpp](https://github.com/iispace/IoT/blob/main/Hydrogen_Prod/main.cpp)
