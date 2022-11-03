@@ -10,8 +10,7 @@
 ## [Materials]
 
 - Board: [Arduino Nano 33 IoT](https://docs.arduino.cc/hardware/nano-33-iot)
-
-    ![](Pics/Nano33IoT.png)
+    ![Nano 33 IoT](https://user-images.githubusercontent.com/24539773/199675878-0c74c643-eb3e-45c0-8444-b8988ad9c63e.png)
 
 - Battery: 18650 Lithium Polymer Battery(3.6V, 2850mA) x 2 with Holder
     <p><img src="Pics/Battery.png" width="200" height="170"></p>
