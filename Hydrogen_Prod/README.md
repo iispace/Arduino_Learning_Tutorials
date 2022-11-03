@@ -1,7 +1,7 @@
 # Electric Current Monitoring System for Hydrogen Production 
 
 ## Demonstration
-<br><center><img src="https://user-images.githubusercontent.com/24539773/199639221-c1992946-f945-4ec1-bf21-aa02a00d2391.png" width="80" height="150"></center>(#)
+<br><center><img src="https://user-images.githubusercontent.com/24539773/199639221-c1992946-f945-4ec1-bf21-aa02a00d2391.png" width="150" height="280"></center>
 
 
 ## Contents
