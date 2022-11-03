@@ -49,7 +49,7 @@
 
 ## [Schematics]
 
-<p><img src="https://user-images.githubusercontent.com/24539773/199676935-a893b122-c23f-4107-8c47-1ddf29a60303.png" width="400" height=""></p>
+<p><img src="https://user-images.githubusercontent.com/24539773/199676935-a893b122-c23f-4107-8c47-1ddf29a60303.png" width="600" height=""></p>
 
 
 ## [IDE]
