@@ -25,4 +25,10 @@
 | GND | GND | GND
 | 3.3V | VCC | VCC
 |D13||CLK
-
+|D11||SDI
+|A5|CS|CS
+|A4|RST|RST
+|A3|RS|RS
+|A2|SDI|
+|A1|CLK|
+|A0|LED|LED
