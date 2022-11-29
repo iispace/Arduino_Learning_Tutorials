@@ -14,3 +14,12 @@
 </a>
 <br><br><br><br><br><br><br><br>
 <hr>
+
+## 2. 프로그래밍
+### 2.1 Library
+
+### 2.2 Source Code
+
+## 3. 실행 모드 전환
+ESP32-CAM 모듈 실행 모드: ESP32-CAM 모듈의 GPIO0번 핀과 GND핀 연결 제거
+<br> 
