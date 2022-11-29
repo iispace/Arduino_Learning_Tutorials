@@ -21,6 +21,7 @@
 
 # Wiring<br>
 | Arduino UNO | Software SPI | Hardware SPI |
-| :- | -: | :-: |
+| :-: | :-: | :-: |
 | GND | GND | GND
+| 3.3V | 3.3V | 3.3V
 
