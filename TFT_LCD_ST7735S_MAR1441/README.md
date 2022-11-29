@@ -9,7 +9,9 @@
 <hr>
 
 # IDE<br>
-![image](https://user-images.githubusercontent.com/24539773/204492337-c76cb87f-93e6-4132-af63-6062e60ef4e8.png)
+<a href="https://platformio.org/" target="_blank">
+  <img src="https://user-images.githubusercontent.com/24539773/204492337-c76cb87f-93e6-4132-af63-6062e60ef4e8.png" width="300" height="300" align="left">
+</a>
 <br>
 
 # Library<br>
