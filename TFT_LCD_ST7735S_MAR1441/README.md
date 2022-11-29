@@ -1,4 +1,4 @@
-# Reference<br>
+# 1.44" TFT LCD (SR7735S/MAR1441)<br>
 <a href="http://www.lcdwiki.com/1.44inch_Arduino_SPI_Module_ST7735S_SKU:MAR1441" target="_blank">
   <img src="https://user-images.githubusercontent.com/24539773/204490332-9cf94e98-bf61-46d1-9cb9-082cf2dba9d3.png" width="300" height="300" align="left">
 </a>
