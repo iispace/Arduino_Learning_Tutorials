@@ -10,9 +10,10 @@
 
 # IDE<br>
 <a href="https://platformio.org/" target="_blank">
-  <img src="https://user-images.githubusercontent.com/24539773/204492337-c76cb87f-93e6-4132-af63-6062e60ef4e8.png" width="300" height="300" align="left">
+  <img src="https://user-images.githubusercontent.com/24539773/204492337-c76cb87f-93e6-4132-af63-6062e60ef4e8.png" width="400" height="300" align="left">
 </a>
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
 # Library<br>
 ![image](https://user-images.githubusercontent.com/24539773/204491960-996f7807-f053-4ae6-8fc6-7845f323df58.png)
