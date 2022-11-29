@@ -20,6 +20,7 @@
 <br>
 
 # Wiring<br>
-|Arduino UNO|Software SPI|Hardware SPI|
-|0|0|0|
+| Stretch/Untouched | ProbDistribution | Accuracy |
+| :- | -: | :-: |
+| Stretched | Gaussian | .843
 
