@@ -20,7 +20,7 @@
 <br>
 
 # Wiring<br>
-| Stretch/Untouched | ProbDistribution | Accuracy |
+| Arduino UNO | Software SPI | Hardware SPI |
 | :- | -: | :-: |
-| Stretched | Gaussian | .843
+| GND | GND | GND
 
