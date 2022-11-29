@@ -20,7 +20,6 @@
 <br>
 
 # Wiring<br>
-|---|---|---|
 |Arduino UNO|Software SPI|Hardware SPI|
-||||
+|0|0|0|
 
