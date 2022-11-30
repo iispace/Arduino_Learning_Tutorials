@@ -95,4 +95,4 @@ void control_ldr(){
   }
   lcd.setCursor(0,0); lcd.print("LDR: ");
   lcd.setCursor(5,0); lcd.print(val);
-}
+} 
