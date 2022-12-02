@@ -47,6 +47,17 @@ Name: 개발자 지정 이름<br>
 </ol>
 <hr>
 
-## 5. 실행 모드 전환
-ESP32-CAM 모듈 실행 모드: ESP32-CAM 모듈의 GPIO0번 핀과 GND핀 연결 제거
-<br> 
+## 5. Build and Upload to ESP32-CAM 보드
+<hr>
+
+## 6. 실행  
+<ol>
+  <li>PlatformIO에서 Serial Monitor 열기</li>
+  <li>ESP32-CAM 모듈 실행 모드: ESP32-CAM 모듈의 GPIO0번 핀과 GND핀 연결 제거한 후 ESP32-CAM 보드에 있는 RESET 버튼 눌러줌</li>
+  <li>웹브라우저 열고 PlatformIO의 Serial Monitor에서 확인한 IP 주소로 이동 </li>
+  <li>화면에 나타난 카메라 설정 화면의 제일 아래쪽에 있는 "Start Stream" 버튼 클릭</li>
+</ol>
+<hr>
+
+ 
+
