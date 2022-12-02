@@ -1,4 +1,6 @@
 # ESP32-CAM<br>
+<a href="https://github.com/SeeedDocument/forum_doc/blob/master/reg/ESP32_CAM_V1.6.pdf"></a>
+
 ## 1. 프로그램 업로드용 결선 방법 <br>
 아래 두 가지 방법 중 한 가지의 방법을 선택하여 구성한 후 컴퓨터의 USB 단자에 연결<br>
 
