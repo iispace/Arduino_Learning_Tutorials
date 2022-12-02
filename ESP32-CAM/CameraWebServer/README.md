@@ -1,4 +1,4 @@
-## 4. Arduino용 CameraWebServer 프로젝트에서 필요한 파일 가져오기
+## 1. Arduino용 CameraWebServer 프로젝트에서 필요한 파일 가져오기
 <ol>
   <li>Arduino IDE에서 CameraWebServer 예제 프로젝트 열기</li>
   <img src="https://user-images.githubusercontent.com/24539773/205213382-a8a83a5c-f60f-43d9-b8dd-a3436d550cbc.png" width="280" height="200" align="left">
@@ -21,12 +21,12 @@
 </ol>
 <hr>
 
-## 5. Build and Upload to ESP32-CAM 보드
+## 2. Build and Upload to ESP32-CAM 보드
 <img src="https://user-images.githubusercontent.com/24539773/205227045-67c091c2-dc08-49f0-9727-5c8e6af3cdc6.png" width="444" height="74" align="left">
 <br><br><br><br><br>
 <hr>
 
-## 6. 실행  
+## 3. 실행  
 <ol>
   <li>PlatformIO에서 Serial Monitor 열기</li>
   <img src="https://user-images.githubusercontent.com/24539773/205221650-5c583c83-306c-4cb3-8842-247bb8bbe668.png" width="618" height="40" align="left">
