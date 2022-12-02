@@ -63,7 +63,7 @@ Name: 개발자 지정 이름<br>
 
 ## 5. 예제 프로그래밍
 
-- [CameraWebServer](https://github.com/iispace/Arduino_Learning_Tutorials/tree/main/ESP32-CAM/CameraWebServer/main.cpp)
+- [CameraWebServer](https://github.com/iispace/Arduino_Learning_Tutorials/tree/main/ESP32-CAM/CameraWebServer)
 - [Take Photo and Save to SD Card](https://github.com/iispace/Arduino_Learning_Tutorials/tree/main/ESP32-CAM/TakePhotoNSaveToSDCard/main.cpp)
  
 
