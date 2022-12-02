@@ -71,9 +71,8 @@ Name: 개발자 지정 이름<br>
    <br><br><br>
   <li>ESP32-CAM 모듈 실행 모드로 변경: ESP32-CAM 모듈의 GPIO0번 핀과 GND핀 연결 제거한 후 ESP32-CAM 보드에 있는 RESET 버튼 눌러줌</li>
   <li>PlatformIO의 Serial Monitor에서 WiFi 연결 상태와 IP 주소 확인 </li>
-  <img src="https://user-images.githubusercontent.com/24539773/205224279-0395b15e-f333-4f4f-83b6-03ddfbe75e18.png" width="500" height="190" align="left">
+  <img src="https://user-images.githubusercontent.com/24539773/205224279-0395b15e-f333-4f4f-83b6-03ddfbe75e18.png" width="400" height="150" align="left">
   <br><br><br><br><br><br><br><br>
- 
   
   <li>웹브라우저 열고 PlatformIO의 Serial Monitor에서 확인한 IP 주소로 이동 </li>
   
