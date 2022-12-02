@@ -30,7 +30,7 @@ Name: 개발자 지정 이름<br>
   <li>PlatformIO HOME ==> Libraries에서 "espressif\esp32-camera" 선택하여 현재 프로젝트에 추가</li>
   <img src="https://user-images.githubusercontent.com/24539773/205213815-f62b6013-49f7-4ea0-8e34-52c18d78559a.png" width="500" height="200" align="left">
   <br><br><br><br><br><br><br><br><br><br>
-  <li>Espressif Github("https://github.com/espressif/esp32-camera")에서 zip 형식으로 다운로드한 후 압축 해제하여 PlatformIO의 해당 Project하위에 있는 "Lib" 폴더에 복사(단, 이 방법으로 Lib 폴더에 추가한 경우에는 platformio.ini 파일을 열고 "build_flags = -I../lib/{라이브러리 최상위 폴더명}"을 추가해야 함.)</li>
+  <li>Espressif Github("https://github.com/espressif/esp32-camera")에서 zip 형식으로 다운로드한 후 압축 해제하여 PlatformIO의 해당 Project하위에 있는 "lib" 폴더에 복사(단, 이 방법으로 Lib 폴더에 추가한 경우에는 platformio.ini 파일을 열고 "build_flags = -I../lib/{라이브러리 최상위 폴더명}"을 추가해야 함.)</li>
  <img src="https://user-images.githubusercontent.com/24539773/205217298-690e8de5-d3f1-4930-b658-72daaab38ea1.png" width="500" height="200" align="left">
  
   <br><br><br><br><br><br><br><br><br>
@@ -45,6 +45,8 @@ Name: 개발자 지정 이름<br>
   <li>아래 그림과 같이 CameraWebServer 예제 프로젝트 화면에 "CameraWebServer","app_httpd.cpp","camera_index.h","camera_pins."의 총 4개의 탭이 나타남.)</li>
   <img src="https://user-images.githubusercontent.com/24539773/205215215-e9c56807-44c7-4e96-baed-1258f8ebc5ea.png" width="280" height="200" align="left">
   <br><br><br><br><br><br><br><br><br><br>
+  <li>위 이미지에서 보이는 CameraWebServer.ino 파일의 내용을 전부 복사하여 PlatfirmIO의 main.cpp에 덮어쓰기 한다.</li>
+  <li>PlatfirmIO의 lib폴더 하위에 "camear_config"라는 이름의 폴더(폴더명은 임의로 지정한 것)를 하나 생성한 후,위 이미지에서 보이는 camera_index.h 파일과 camera_pins.h 파일을 저장한다.</li>
 </ol>
 <hr>
 
