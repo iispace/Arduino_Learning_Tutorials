@@ -28,8 +28,10 @@ Name: 개발자 지정 이름<br>
 
 **다음 중 한가지 방법으로 camera library를 platformio에 추가**<br>
 <ol>
-  <li>Using PlatformIO Library Manager: espressif/esp32-camera</li>
-  <li>Download zip file from repository ("https://github.com/espressif/esp32-camera") => exract it => put entire extraction under Project\Lib directory</li>
+  <li>PlatformIO HOME ==> Libraries에서 espressif\esp32-camera 추가</li>
+  ![image](https://user-images.githubusercontent.com/24539773/205213815-f62b6013-49f7-4ea0-8e34-52c18d78559a.png)
+
+  <li>Espressif Github("https://github.com/espressif/esp32-camera")에서 zip 형식으로 다운로드한 후 압축 해제하여 PlatformIO의 해당 Project하위에 있는 "Lib" 폴더에 복사</li>
 </ol>
 
 ## 4. Arduino용 CameraWebServer 프로젝트에서 필요한 파일 가져오기
