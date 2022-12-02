@@ -18,10 +18,10 @@
 ## 2. 프로그래밍
 ### 2.1 Installation of Camera Library
 Do either way of the followings:<br>
-<li>
-Using PlatformIO Library Manager: espressif/esp32-camera<br>
-Download zip file from repository ("https://github.com/espressif/esp32-camera") => exract it => put entire extraction under Project\Lib directory
-</li>
+<ol>
+  <li>Using PlatformIO Library Manager: espressif/esp32-camera</li>
+  <li>Download zip file from repository ("https://github.com/espressif/esp32-camera") => exract it => put entire extraction under Project\Lib directory</li>
+</ol>
 ### 2.2 Source Code
 Working on it....<br>
 ## 3. 실행 모드 전환
