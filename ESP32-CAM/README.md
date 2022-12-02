@@ -47,6 +47,9 @@ Name: 개발자 지정 이름<br>
   <br><br><br><br><br><br><br><br><br><br>
   <li>위 이미지에서 보이는 CameraWebServer.ino 파일의 내용을 전부 복사하여 PlatfirmIO의 main.cpp에 덮어쓰기 한다.</li>
   <li>PlatfirmIO의 lib폴더 하위에 "camera_config"라는 이름의 폴더(폴더명은 임의로 지정한 것)를 하나 생성한 후,위 이미지에서 보이는 camera_index.h 파일과 camera_pins.h 파일을 저장한다.</li>
+  <li>PlatformIO의 PROBLEMS 창을 보니 더이상 지원하지 않는 literal 상수가 있는 것 같다. 권고내용을 보고 그대로 따라 바뀌준다.</li>
+  <img src="https://user-images.githubusercontent.com/24539773/205219629-01e424ef-fa7c-48ae-8199-601213acb19a.png" width="280" height="200" align="left">
+  <br><br><br><br><br><br><br><br><br><br>
 </ol>
 <hr>
 
