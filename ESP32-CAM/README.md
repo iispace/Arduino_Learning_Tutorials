@@ -39,7 +39,7 @@ Name: 개발자 지정 이름<br>
 <ol>
   <li>Arduino IDE에서 CameraWebServer 예제 프로젝트 열기</li>
   <img src="https://user-images.githubusercontent.com/24539773/205213382-a8a83a5c-f60f-43d9-b8dd-a3436d550cbc.png" width="280" height="200" align="left">
-
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <li>아래 그림과 같이 CameraWebServer 예제 프로젝트 화면에 "CameraWebServer","app_httpd.cpp","camera_index.h","camera_pins."의 총 4개의 탭이 나타남.)</li>
   <img src="https://user-images.githubusercontent.com/24539773/205213190-f39cbf12-47c5-42e3-879c-60d5aab9ad06.png" width="280" height="200" align="left">
 
