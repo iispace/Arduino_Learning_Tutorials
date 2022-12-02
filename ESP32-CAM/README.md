@@ -56,6 +56,7 @@ Name: 개발자 지정 이름<br>
   <li>PlatfirmIO의 lib폴더 하위에 "camera_config"라는 이름의 폴더(폴더명은 임의로 지정한 것)를 하나 생성한 후,위 이미지에서 보이는 camera_index.h 파일과 camera_pins.h 파일을 저장한다.</li>
   <img src="https://user-images.githubusercontent.com/24539773/205219964-26f80d78-19be-42ce-a67b-d15a0eb6817b.png" width="180" height="280" align="left">
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
   <li>PlatformIO에서 ESP32-CAM을 사용하기 위한 기본 설정이 완료되었으므로, main.cpp파일에 필요한 프로그래밍을 할 수 있게 되었음</li>
 </ol>
 <hr>
