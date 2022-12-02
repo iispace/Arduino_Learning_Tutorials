@@ -17,7 +17,10 @@
 
 ## 2. 프로젝트 생성
 <img src="https://user-images.githubusercontent.com/24539773/205210647-87ed6b04-49c6-4079-a95b-1ed1a1ef54e4.png" width="400" height="230" align="left">
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+Name: 개발자 지정 이름
+Board: "AI Thinker ESP32-CAM" 선택
+framework: "Arduino" 선택<br>
 <hr>
 
 ## 3. Camera Library 추가
