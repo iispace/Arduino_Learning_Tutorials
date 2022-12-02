@@ -54,7 +54,7 @@ Name: 개발자 지정 이름<br>
   <img src="https://user-images.githubusercontent.com/24539773/205219964-26f80d78-19be-42ce-a67b-d15a0eb6817b.png" width="180" height="280" align="left">
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
   
-<li>PlatformIO의 main.cpp 파일을 열고, 카메라 모델을 ESP32-CAM 보드에 맞게 AI-THINKER로 설정해 주기 위해 . "#define CAMERA_MODEL_WROVER_KIT // Has PSRAM"을 주석처리하고, "#define CAMERA_MODEL_AI_THINKER // Has PSRAM"의 주석을 없애서 CAMERAL_MODEL_AI_THINKER라 define 되도록 한다. </li>
+<li>PlatformIO의 main.cpp 파일을 열고, 카메라 모델을 ESP32-CAM 보드에 맞게 AI-THINKER로 설정해 주기 위해 "#define CAMERA_MODEL_WROVER_KIT // Has PSRAM"을 주석 처리하고, "#define CAMERA_MODEL_AI_THINKER // Has PSRAM"의 주석을 없애서 "CAMERAL_MODEL_AI_THINKER"가 카메라 모델로 define 되도록 한다. </li>
   <img src="https://user-images.githubusercontent.com/24539773/205226040-5eac6643-8434-47d4-ba11-5769dbd54f9f.png" width="280" height="150" align="left">
  <br><br><br><br><br><br><br><br>
   
