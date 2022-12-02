@@ -15,9 +15,11 @@
 <br><br><br><br><br><br><br><br>
 <hr>
 
-## 2. 프로그래밍
-### 2.1 Installation of Camera Library
-Do either way of the followings:<br>
+## 2. 프로젝트 생성
+<img src="https://user-images.githubusercontent.com/24539773/205210647-87ed6b04-49c6-4079-a95b-1ed1a1ef54e4.png" width="280" height="200" align="left">
+
+## 3. Camera Library 추가
+다음 중 한가지 방법으로 camera library를 platformio에 추가:<br>
 <ol>
   <li>Using PlatformIO Library Manager: espressif/esp32-camera</li>
   <li>Download zip file from repository ("https://github.com/espressif/esp32-camera") => exract it => put entire extraction under Project\Lib directory</li>
