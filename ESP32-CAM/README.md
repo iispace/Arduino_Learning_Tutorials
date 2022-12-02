@@ -21,9 +21,7 @@
 Name: 개발자 지정 이름<br>
 
 **Board**: "**AI Thinker ESP32-CAM**" 선택<br>
-
 **framework**: "**Arduino**" 선택<br>
-
 <hr>
 
 ## 3. Camera Library 추가
