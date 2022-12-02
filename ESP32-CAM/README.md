@@ -65,6 +65,8 @@ Name: 개발자 지정 이름<br>
 <hr>
 
 ## 5. Build and Upload to ESP32-CAM 보드
+<img src="https://user-images.githubusercontent.com/24539773/205227045-67c091c2-dc08-49f0-9727-5c8e6af3cdc6.png" width="444" height="74" align="left">
+<br><br><br><br><br>
 <hr>
 
 ## 6. 실행  
