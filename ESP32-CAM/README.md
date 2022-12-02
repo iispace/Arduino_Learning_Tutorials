@@ -31,6 +31,7 @@ Name: 개발자 지정 이름<br>
   <li>Using PlatformIO Library Manager: espressif/esp32-camera</li>
   <li>Download zip file from repository ("https://github.com/espressif/esp32-camera") => exract it => put entire extraction under Project\Lib directory</li>
 </ol>
+
 ## 4. Arduino용 CameraWebServer 프로젝트에서 필요한 파일 가져오기
 <ol>
   <li>Arduino IDE에서 CameraWebServer 예제 프로젝트 열기</li>
@@ -42,6 +43,6 @@ Name: 개발자 지정 이름<br>
 
 <br>
 <hr>
-## 3. 실행 모드 전환
+## 5. 실행 모드 전환
 ESP32-CAM 모듈 실행 모드: ESP32-CAM 모듈의 GPIO0번 핀과 GND핀 연결 제거
 <br> 
