@@ -25,13 +25,23 @@ Name: 개발자 지정 이름<br>
 <hr>
 
 ## 3. Camera Library 추가
-다음 중 한가지 방법으로 camera library를 platformio에 추가:<br>
+
+**다음 중 한가지 방법으로 camera library를 platformio에 추가**<br>
 <ol>
   <li>Using PlatformIO Library Manager: espressif/esp32-camera</li>
   <li>Download zip file from repository ("https://github.com/espressif/esp32-camera") => exract it => put entire extraction under Project\Lib directory</li>
 </ol>
-### 2.2 Source Code
-Working on it....<br>
+## 4. Arduino용 CameraWebServer 프로젝트에서 필요한 파일 가져오기
+<ol>
+  <li>Arduino IDE에서 CameraWebServer 예제 프로젝트 열기</li>
+  ![Arduino_CameraWebServer](https://user-images.githubusercontent.com/24539773/205213382-a8a83a5c-f60f-43d9-b8dd-a3436d550cbc.png)
+  <li>아래 그림과 같이 CameraWebServer 예제 프로젝트 화면에 "CameraWebServer","app_httpd.cpp","camera_index.h","camera_pins."의 총 4개의 탭이 나타남.)</li>
+  ![image](https://user-images.githubusercontent.com/24539773/205213190-f39cbf12-47c5-42e3-879c-60d5aab9ad06.png)
+
+</ol>
+
+<br>
+<hr>
 ## 3. 실행 모드 전환
 ESP32-CAM 모듈 실행 모드: ESP32-CAM 모듈의 GPIO0번 핀과 GND핀 연결 제거
 <br> 
