@@ -51,8 +51,9 @@ Name: 개발자 지정 이름<br>
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
   
   <li>PlatformIO의 PROBLEMS 창을 보니 더이상 지원하지 않는 literal 상수가 있는 것 같다. 권고내용을 보고 그대로 따라 바뀌준다.</li>
-  <img src="https://user-images.githubusercontent.com/24539773/205219629-01e424ef-fa7c-48ae-8199-601213acb19a.png" width="280" height="200" align="left">
+  <img src="https://user-images.githubusercontent.com/24539773/205221333-fb813f83-7362-4625-81b2-9782823b5cfe.png" width="280" height="200" align="left">
   <br><br><br><br><br><br><br><br><br><br>
+
 </ol>
 <hr>
 
