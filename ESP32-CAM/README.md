@@ -31,6 +31,7 @@ Name: 개발자 지정 이름<br>
   <img src="https://user-images.githubusercontent.com/24539773/205213815-f62b6013-49f7-4ea0-8e34-52c18d78559a.png" width="500" height="200" align="left">
   <br><br><br><br><br><br><br><br><br><br>
   <li>Espressif Github("https://github.com/espressif/esp32-camera")에서 zip 형식으로 다운로드한 후 압축 해제하여 PlatformIO의 해당 Project하위에 있는 "Lib" 폴더에 복사</li>
+  단, 이 방법으로 Lib 폴더에 추가한 경우에는 platformio.ini 파일을 열고 "build_flags = -I../lib/{라이브러리 최상위 폴더명}"을 추가해야 함.
   <br><br><br>
 </ol>
 <hr>
