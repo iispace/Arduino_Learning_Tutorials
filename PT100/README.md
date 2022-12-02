@@ -6,7 +6,7 @@
 
 ## 재료:
 - PT100 (3 wires)
-- ![MAX31865 Breakout board](https://learn.adafruit.com/adafruit-max31865-rtd-pt100-amplifier)
+- [MAX31865 Breakout board](https://learn.adafruit.com/adafruit-max31865-rtd-pt100-amplifier)
 - Arduino Uno
 - 4P Terminal
 
