@@ -28,3 +28,6 @@
 
 
 
+
+## 3. 예제
+[소스코드](https://github.com/iispace/Arduino_Learning_Tutorials/blob/main/PT100/PT100%20with%20Arduino)
