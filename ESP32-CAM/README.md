@@ -10,14 +10,11 @@
 <img src="https://user-images.githubusercontent.com/24539773/204515770-8448b033-690c-46bc-b4b8-9ba480a757cd.png" width="280" height="200" align="left">
 <br><br><br><br><br><br><br><br><hr>
 
-## 2. IDE <br>
+## 2. PlatformIO(IDE)에서 프로젝트 생성 <br>
 <a href="https://platformio.org/" target="_blank">
   <img src="https://user-images.githubusercontent.com/24539773/204492337-c76cb87f-93e6-4132-af63-6062e60ef4e8.png" width="280" height="200" align="left">
 </a>
 <br><br><br><br><br><br><br><br>
-<hr>
-
-## 2. 프로젝트 생성
 <img src="https://user-images.githubusercontent.com/24539773/205210647-87ed6b04-49c6-4079-a95b-1ed1a1ef54e4.png" width="420" height="230" align="left">
 <br><br><br><br><br><br><br><br><br><br>
 Name: 개발자 지정 이름<br>
