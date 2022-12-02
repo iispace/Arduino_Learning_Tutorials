@@ -1,5 +1,7 @@
 # ESP32-CAM<br>
 ## 1. 프로그램 업로드용 결선 방법 <br>
+아래 두 가지 방법 중 한 가지의 방법을 선택하여 구성한 후 컴퓨터의 USB 단자에 연결<br>
+
 ### 1.1 FTDI 이용
 <img src="https://user-images.githubusercontent.com/24539773/204515143-75981249-23a6-4a84-af99-289dc6b4e4c0.png" width="280" height="200" align="left">
 <br><br><br><br><br><br><br><br><hr>
