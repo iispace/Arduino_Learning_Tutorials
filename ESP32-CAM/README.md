@@ -29,8 +29,8 @@ Name: 개발자 지정 이름<br>
 **다음 중 한가지 방법으로 camera library를 platformio에 추가**<br>
 <ol>
   <li>PlatformIO HOME ==> Libraries에서 espressif\esp32-camera 추가</li>
-  <img src="https://user-images.githubusercontent.com/24539773/205213815-f62b6013-49f7-4ea0-8e34-52c18d78559a.png" width="350" height="200" align="left">
-  <br><br><br><br><br><br><br><br>
+  <img src="https://user-images.githubusercontent.com/24539773/205213815-f62b6013-49f7-4ea0-8e34-52c18d78559a.png" width="400" height="200" align="left">
+  <br><br><br><br><br><br><br><br><br><br>
   <li>Espressif Github("https://github.com/espressif/esp32-camera")에서 zip 형식으로 다운로드한 후 압축 해제하여 PlatformIO의 해당 Project하위에 있는 "Lib" 폴더에 복사</li>
   <br><br><br><br><br><br><br><br>
 </ol>
