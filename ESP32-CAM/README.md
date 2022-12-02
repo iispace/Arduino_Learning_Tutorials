@@ -33,9 +33,9 @@ Name: 개발자 지정 이름<br>
   <li>Espressif Github("https://github.com/espressif/esp32-camera")에서 zip 형식으로 다운로드한 후 압축 해제하여 PlatformIO의 해당 Project하위에 있는 "lib" 폴더에 복사(단, 이 방법으로 Lib 폴더에 추가한 경우에는 platformio.ini 파일을 열고 "build_flags = -I../lib/{라이브러리 최상위 폴더명}"을 추가해야 함.)</li>
   <li>platformio.ini 파일을 열고 "monitor_speed = 115200" 을 추가해 준다.</li>
   <li>아래 이미지에서 왼쪽은 PlatformIO의 Libraries 메뉴에서 esp32-camera를 추가했을 때의 설정모습이며, 오른쪽은 lib폴더 하위에 압축을 해제한 zip 파일 형식의 라이브러리를 추가했을 때 설정 모습.</li>
-  <img src="https://user-images.githubusercontent.com/24539773/205223400-b96f9042-1413-4b64-ad29-ca552bd22d4b.png" width="500" height="200" align="left">
+  <img src="https://user-images.githubusercontent.com/24539773/205223400-b96f9042-1413-4b64-ad29-ca552bd22d4b.png" width="300" height="150" align="left">
   
- <img src="https://user-images.githubusercontent.com/24539773/205222512-8f317eff-e449-4826-9ed9-7e80c0fbbb4f.png" width="500" height="200" align="left">
+ <img src="https://user-images.githubusercontent.com/24539773/205222512-8f317eff-e449-4826-9ed9-7e80c0fbbb4f.png" width="300" height="150" align="left">
  
   <br><br><br><br><br><br><br><br><br>
 </ol>
