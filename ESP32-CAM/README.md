@@ -77,6 +77,7 @@ Name: 개발자 지정 이름<br>
   <li>웹브라우저 열고 PlatformIO의 Serial Monitor에서 확인한 IP 주소로 이동 </li>
   
   <li>화면에 나타난 카메라 설정 화면의 제일 아래쪽에 있는 "Start Stream" 버튼 클릭</li>
+  <img src="https://user-images.githubusercontent.com/24539773/205224879-325266df-04b7-4ac2-91e1-1097e4e58734.png" width="500" height="650" align="left">
 </ol>
 <hr>
 
