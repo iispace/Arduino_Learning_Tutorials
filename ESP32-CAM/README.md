@@ -16,8 +16,8 @@
 <hr>
 
 ## 2. 프로젝트 생성
-<img src="https://user-images.githubusercontent.com/24539773/205210647-87ed6b04-49c6-4079-a95b-1ed1a1ef54e4.png" width="350" height="250" align="left">
-<br><br><br><br><br><br><br><br>
+<img src="https://user-images.githubusercontent.com/24539773/205210647-87ed6b04-49c6-4079-a95b-1ed1a1ef54e4.png" width="400" height="250" align="left">
+<br><br><br><br><br><br><br><br><br><br><br><br>
 <hr>
 
 ## 3. Camera Library 추가
