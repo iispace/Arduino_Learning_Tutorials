@@ -47,4 +47,4 @@
 |A3|RS|RS
 |A2|SDI|
 |A1|CLK|
-|A0|LED|LED 
+|A0 (or any digital output pin with HIGH signal)|LED|LED 
