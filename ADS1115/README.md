@@ -29,15 +29,4 @@ ADS1115 module is an analog to digital converter module that has 16-bit precisio
 |SDA|A4(SDA)||
 |A0||A0|
 
-- test
-
-<div align="center">
-
-| Item         | Price | # In stock |
-|--------------|:-----:|-----------:|
-| Juicy Apples |  1.99 |        739 |
-| Bananas      |  1.89 |          6 |
-
-</div>
-
 - [Example Code](https://github.com/iispace/Arduino_Learning_Tutorials/blob/main/ADS1115/source.cpp)
