@@ -1,112 +1,27 @@
-/*
-  Modify on May 16, 2021
-  Modify by MohammedDamirchi base of https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/ADS1115
-  Home
-*/
+#include <Arduino.h>
+#include <Adafruit_ADS1X15.h>
+#include <SPI.h>
 
+Adafruit_ADS1115 ads1115;   /* Use this for the 16-bit version */
+//Adafruit_ADS1015 ads;     /* Use this for the 12-bit version */
 
-// I2C device class (I2Cdev) demonstration Arduino sketch for ADS1115 class
-// Example of reading two differential inputs of the ADS1115 and showing the value in mV
-// 2016-03-22 by Eadf (https://github.com/eadf)
-// Updates should (hopefully) always be available at https://github.com/jrowberg/i2cdevlib
-//
-// Changelog:
-//     2016-03-22 - initial release
-
-/* ============================================
-I2Cdev device library code is placed under the MIT license
-Copyright (c) 2011 Jeff Rowberg
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-===============================================
-*/
-
-#include "ADS1115.h"
-
-ADS1115 adc0(ADS1115_DEFAULT_ADDRESS);
-
-// Wire ADS1115 ALERT/RDY pin to Arduino pin 2
-const int alertReadyPin = 2;
-
-void setup() {    
-    //I2Cdev::begin();  // join I2C bus
-    Wire.begin();
-    Serial.begin(115200); // initialize serial communication 
-    
-    Serial.println("Testing device connections...");
-    Serial.println(adc0.testConnection() ? "ADS1115 connection successful" : "ADS1115 connection failed");
-    
-    adc0.initialize(); // initialize ADS1115 16 bit A/D chip
-
-    // We're going to do single shot sampling
-    adc0.setMode(ADS1115_MODE_SINGLESHOT);
-    
-    // Slow things down so that we can see that the "poll for conversion" code works
-    adc0.setRate(ADS1115_RATE_250);
-      
-    // Set the gain (PGA) +/- 6.144v
-    // Note that any analog input must be higher than –0.3V and less than VDD +0.3
-    adc0.setGain(ADS1115_PGA_6P144);
-    // ALERT/RDY pin will indicate when conversion is ready
-
-    pinMode(alertReadyPin,INPUT_PULLUP);
-    adc0.setConversionReadyPinMode();
-
-    // To get output from this method, you'll need to turn on the 
-    //#define ADS1115_SERIAL_DEBUG // in the ADS1115.h file
-    #ifdef ADS1115_SERIAL_DEBUG
-    adc0.showConfigRegister();
-    Serial.print("HighThreshold="); Serial.println(adc0.getHighThreshold(),BIN);
-    Serial.print("LowThreshold="); Serial.println(adc0.getLowThreshold(),BIN);
-    #endif
+void setup(){
+  Serial.begin(9600);
+  Serial.println("Jello!");
+  Serial.println("Getting single-ended reading from Light Sensor TEMP 6000");
+  ads1115.begin();
 }
 
-/** Poll the assigned pin for conversion status 
- */
-void pollAlertReadyPin() {
-  for (uint32_t i = 0; i<100000; i++)
-    if (!digitalRead(alertReadyPin)) return;
-   Serial.println("Failed to wait for AlertReadyPin, it's stuck high!");
-}
+void loop(){
+  int16_t adc0;
 
-void loop() {
-       
-    // The below method sets the mux and gets a reading.
-    adc0.setMultiplexer(ADS1115_MUX_P0_NG);
-    adc0.triggerConversion();
-    pollAlertReadyPin();
-    Serial.print("A0: "); Serial.print(adc0.getMilliVolts(false)); Serial.print("mV\t");
-    
-    adc0.setMultiplexer(ADS1115_MUX_P1_NG);
-    adc0.triggerConversion();
-    pollAlertReadyPin();
-    Serial.print("A1: "); Serial.print(adc0.getMilliVolts(true)); Serial.print("mV\t");
-    
-    adc0.setMultiplexer(ADS1115_MUX_P2_NG);
-    adc0.triggerConversion();
-    pollAlertReadyPin();
-    Serial.print("A2: "); Serial.print(adc0.getMilliVolts(true)); Serial.print("mV\t");
-    
-    adc0.setMultiplexer(ADS1115_MUX_P3_NG);
-    // Do conversion polling via I2C on this last reading: 
-    Serial.print("A3: "); Serial.print(adc0.getMilliVolts(true)); Serial.print("mV");
-    
-    Serial.println(digitalRead(alertReadyPin));
-    delay(500);
-*/ 
+  adc0 = ads1115.readADC_SingleEnded(0);
+  float ratio = float(adc0) / 65535.0;
+  float square_ratio = pow(ratio, 2.0);
+
+  Serial.print("reading: "); Serial.print(adc0); 
+  Serial.print(", ratio: "); Serial.print(ratio);
+  Serial.print(", square_ratio: "); Serial.println(square_ratio); // Square the value to make more obvious (읽어들인 값의 의미가 더 잘 드러나도록 제곱한 값을 표시함)
+  
+  delay(2000);
+}
