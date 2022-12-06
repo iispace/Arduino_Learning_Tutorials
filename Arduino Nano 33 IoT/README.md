@@ -4,10 +4,11 @@
 
 # Trouble Shooting
 
-1. USB 인식 실패(Windows 10):
-> RESET 버튼을 두번 빠르게 눌러서 부트로더를 실행시킨다. 
+1. [USB 인식 실패(Windows 10)](https://forum.arduino.cc/t/solved-arduino-nano-33-iot-not-recognized-by-windows-10/621376)
+ 
+ > RESET 버튼을 두번 빠르게 눌러서 부트로더를 실행시킨다. 
 
->> - 제대로 되었다면 보드의 USB 단자 주변에 부착된 LED가 주황색으로 점멸하는 것이 보인다.
+  >> - 제대로 되었다면 보드의 USB 단자 주변에 부착된 LED가 주황색으로 점멸하는 것이 보인다.
  
 > 윈도우 장치관리자(devmgmt.msc)를 열고 인식된 포트 번호를 확인한다.
 > Arduino IDE 또는 PlatformIO와 같은 IDE 도구에서 인식된 포트 번호를 이용하여 프로그램을 업로드한다.
