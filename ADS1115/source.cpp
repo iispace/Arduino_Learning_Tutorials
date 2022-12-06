@@ -9,7 +9,7 @@ void setup(){
   Serial.begin(9600);
   Serial.println("Jello!");
   Serial.println("Getting single-ended reading from Light Sensor TEMP 6000");
-  ads1115.begin();
+  ads1115.begin();  // ADS1115 모듈의 기본 주소인 0x48을 사용하여 장치 시작
 }
 
 void loop(){
