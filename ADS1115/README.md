@@ -22,7 +22,7 @@ ADS1115 module is an analog to digital converter module that has 16-bit precisio
 - 결선 방법
 
 |ADS1115|Arduino Uno|Light Sensor TEMP6000)|
-|---|---|---|
+|:-:|:-:|:-:|
 |VCC|5V|VCC|
 |GND|GND|GND|
 |SCL|A5(SCL)||
