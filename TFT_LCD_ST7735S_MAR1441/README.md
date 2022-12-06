@@ -51,4 +51,6 @@
 
 <br>
 (1): If any other module(like ADS1115) you connected to Arduino UNO is using I2C then you cannot use A4 for the reset line on the display because A4 is used for I2C. In this case, you can connect reset line on the display to RESET pin on the Arduino UNO and define RST as 0(zero) in your program (i.e., #define RST 0).<br>
-(2): if you do not need to control backlight (the white LED), you can connect LED pin on the display to any digital output pin on the Arduino UNO (ex: D2) and send HIGH signal to that digital pin in setup() function. (i.e., pinMode(2, OUTPUT); digitalWrite(2, HIGH);)
+만일 아두이노 UNO 보드에 TFT-LCD display와 함께 ADS1115와 같이 I2C 통신을 하는 모듈을 함께 연결해야 할 경우에는 TFT-LCD의 RST 핀을 A4에 연결하면 안된다. A4는 I2C 통신을 위해 사용되므로, TFT-LCD의 RST 핀을 아두이노 우노 보드의 RESET 핀에 연결하고, 프로그램에서 "#define RST A4"를 "#define RST 0"로 수정해야 한다.<br>
+(2): if you do not need to control backlight (the white LED), you can connect LED pin on the display to any digital output pin on the Arduino UNO (ex: D2) and send HIGH signal to that digital pin in setup() function. (i.e., pinMode(2, OUTPUT); digitalWrite(2, HIGH);)<br>
+백라이트 LED를 제어할 필요가 없다면 항상 백라이트가 켜져 있을 수 있도록 아두이노 Uno의 A0 핀 대신에 Digital핀 (예: D2)에 연결해도 동작한다. 단, Digital 핀에 연결할 경우에는 프로그램의 setup() 함수에서 pinMode를 선언해 주고, digitalWrite(핀번호, HIGH)로 설정해서 항상 LED가 켜져 있도록 한다.<br>
