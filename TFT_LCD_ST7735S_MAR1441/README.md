@@ -50,4 +50,5 @@
 |A0 or ${Any Digital Pin}^{(2)}$|LED|LED 
 
 <br>
-${RESET pin}^{(1)}$: If any other module(like ADS1115) you connected to Arduino UNO is using I2C then you cannot use A4 for the reset line on the display because A4 is used for I2C. In this case, you can connect reset line on the display to RESET pin on the Arduino UNO and define RST as 0(zero) in your program (i.e., #define RST 0).
+(1): If any other module(like ADS1115) you connected to Arduino UNO is using I2C then you cannot use A4 for the reset line on the display because A4 is used for I2C. In this case, you can connect reset line on the display to RESET pin on the Arduino UNO and define RST as 0(zero) in your program (i.e., #define RST 0).<br>
+(2): if you do not need to control backlight (the white LED), you can connect LED pin on the display to any digital output pin on the Arduino UNO (ex: D2) and send HIGH signal to that digital pin in setup() function. (i.e., pinMode(2, OUTPUT); digitalWrite(2, HIGH);)
