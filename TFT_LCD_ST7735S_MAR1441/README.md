@@ -39,7 +39,7 @@
 | Arduino UNO | TFT LCD(Software SPI) | TFT LCD(Hardware SPI) |
 | :-: | :-: | :-: |
 | GND | GND | GND
-| 3.3V /5 | VCC | VCC
+| 3.3V/5V | VCC | VCC
 |D13||CLK
 |D11||SDI
 |A5|CS|CS
