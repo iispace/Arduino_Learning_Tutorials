@@ -48,3 +48,6 @@
 |A2|SDI|
 |A1|CLK|
 |A0 or ${Any Digital Pin}^{(2)}$|LED|LED 
+
+
+$(1) : $ If any other module(like ADS1115) you connected to Arduino UNO is using I2C then you cannot use A4 for the reset line on the display because A4 is used for I2C. In this case, you can connect reset line on the display to RESET pin on the Arduino UNO and define RST as 0(zero) in your program (i.e., #define RST 0).
