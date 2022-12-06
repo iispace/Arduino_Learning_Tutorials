@@ -43,8 +43,8 @@
 |D13||CLK
 |D11||SDI
 |A5|CS|CS
-|A4$$or RESET pin^{(1)}$$|RST|RST
+|A4 or $${RESET pin}^{(1)}$$|RST|RST
 |A3|RS|RS
 |A2|SDI|
 |A1|CLK|
-|A0 $${or Any Digital Pin}^{(2)}$$|LED|LED 
+|A0 or $${Any Digital Pin}^{(2)}$$|LED|LED 
