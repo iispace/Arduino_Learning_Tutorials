@@ -11,3 +11,4 @@ ADS1115 module is an analog to digital converter module that has 16-bit precisio
 [For more info](https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/assembly-and-wiring)
 
 # Library
+ 
