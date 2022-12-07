@@ -43,12 +43,12 @@
 |D13||CLK
 |D11||SDI
 |A5|CS|CS
-|A4 or ${RESET pin}^{(1)}$|RST|RST
+|A4 or ${D9 pin?}^{(1)}$|RST|RST
 |A3|RS|RS
 |A2|SDI|
 |A1|CLK|
 |A0 or ${Any Digital Pin}^{(2)}$|LED|LED 
 
 <br>
-(1):만일 아두이노 UNO 보드에 TFT-LCD display와 함께 ADS1115와 같이 I2C 통신을 하는 모듈을 함께 연결해야 할 경우에는 TFT-LCD의 RST 핀을 A4에 연결하면 안된다. A4는 I2C 통신을 위해 사용되는 SDA핀이므로, TFT-LCD의 RST 핀을 아두이노 우노 보드의 RESET 핀에 연결하고, 프로그램에서 "#define RST A4"를 "#define RST 0"로 수정하면 동작한다.<br>
+(1):만일 아두이노 UNO 보드에 TFT-LCD display와 함께 ADS1115와 같이 I2C 통신을 하는 모듈을 함께 연결해야 할 경우에는 TFT-LCD의 RST 핀을 A4에 연결하면 안된다. A4는 I2C 통신을 위해 사용되는 SDA핀이므로, TFT-LCD의 RST 핀을 아두이노 우노 보드의 D9 핀에 연결하고, 프로그램에서 "#define RST A4"를 "#define RST 9"로 수정하였더니 잘 동작하는 것을 볼 수 있었다.단, D9핀에 연결하여도 동작이 되는 것은 단순히 관찰을 통해 알게 된 것으므로 이것이 동작하는 이론적 근거는 추가로 더 찾아보아야 한다.<br>
 (2): TFT-LCD의 백라이트 LED(white LED)를 제어할 필요가 없다면 아두이노 Uno의 아날로그 입력 핀의 사용을 줄이기 위해 A0 핀 대신에 Digital핀 (예: D2)에 연결해서 동작시킬 수 있다. 단, Digital 핀에 연결할 경우에는 프로그램의 setup() 함수에서 pinMode를 선언해 주고, digitalWrite(핀번호, HIGH)로 설정해서 항상 LED가 켜져 있도록 한다.<br>
