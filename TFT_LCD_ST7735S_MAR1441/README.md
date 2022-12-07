@@ -51,4 +51,4 @@
 
 <br>
 (1):만일 아두이노 UNO 보드에 TFT-LCD display와 함께 ADS1115와 같이 I2C 통신을 하는 모듈을 함께 연결해야 할 경우에는 TFT-LCD의 RST 핀을 A4에 연결하면 안된다. A4는 I2C 통신을 위해 사용되는 SDA핀이므로, TFT-LCD의 RST 핀을 아두이노 우노 보드의 Digital핀(예 D10)에 연결하고, 프로그램에서 "#define RST A4"를 "#define RST 핀번호"로 수정하면 동작한다.<br>
-(2): TFT-LCD의 백라이트 LED(white LED)를 제어할 필요가 없다면 아두이노 Uno의 아날로그 입력 핀의 사용을 줄이기 위해 A0 핀 대신에 Digital핀 (예: D9)에 연결해서 동작시킬 수 있다. 단, Digital 핀에 연결할 경우에는 프로그램의 setup() 함수에서 pinMode를 선언해 주었다.<br>
+(2): TFT-LCD의 백라이트 LED(white LED)를 제어할 필요가 없다면 아두이노 Uno의 아날로그 입력 핀의 사용을 줄이기 위해 A0 핀 대신에 Digital핀 (예: D9)에 연결해서 동작시킬 수 있다. Digital 핀에 연결할 경우, 프로그램의 setup() 함수에서 pinMode를 선언해 주지 않았지만 잘 동작한다.<br>
