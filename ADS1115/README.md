@@ -29,6 +29,6 @@ ADS1115 module is an analog to digital converter module that has 16-bit precisio
 |SDA|A4(SDA)||
 |A0||A0|
 
-- [(Example1) Light Sensor with ADS1115 and Display on Serial monitor](https://github.com/iispace/Arduino_Learning_Tutorials/blob/main/ADS1115/example1/main.cpp)
-- [(Example2) Light Sensor with ADS1115 and Display on 1.44" TFT_LCD](https://github.com/iispace/Arduino_Learning_Tutorials/blob/main/ADS1115/example2/main.cpp)
+- [(Example1) Light Sensor with ADS1115(Display on Serial monitor)](https://github.com/iispace/Arduino_Learning_Tutorials/blob/main/ADS1115/example1/main.cpp)
+- [(Example2) Light Sensor with ADS1115(Display on 1.44" TFT_LCD)](https://github.com/iispace/Arduino_Learning_Tutorials/blob/main/ADS1115/example2/main.cpp)
 
