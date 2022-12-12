@@ -82,11 +82,15 @@ void loop(){
   my_lcd.Print_Number_Int(adc0, (my_lcd.Get_Display_Width()-120)/2-1+x_offset, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*10-1, 0, ' ', 10);
 
   line_no += 1;
+  my_lcd.Set_Text_colour(255, 165, 0);
   my_lcd.Print_String("volt:", (my_lcd.Get_Display_Width()-120)/2-1, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*8-1);
+  my_lcd.Set_Text_colour(0, 255, 0); 
   my_lcd.Print_Number_Int(volts0, (my_lcd.Get_Display_Width()-120)/2-1+x_offset, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*10-1, 0, ' ', 10);   
 
   line_no += 1;
+  my_lcd.Set_Text_colour(255, 165, 0);
   my_lcd.Print_String("ratio:", (my_lcd.Get_Display_Width()-120)/2-1, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*8-1);
+  my_lcd.Set_Text_colour(0, 255, 0); 
   my_lcd.Print_Number_Float(ratio, 2, (my_lcd.Get_Display_Width()-120)/2-1+x_offset-6, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*10-1, '.', 5,' ');   
 
   Serial.print("reading: "); Serial.print(adc0); 
