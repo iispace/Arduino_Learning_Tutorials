@@ -64,11 +64,12 @@ void loop(){
 
   int line_no = 1;
   
-  int16_t reading;
+  int16_t adc0;
 
-  reading = ads1115.readADC_SingleEnded(0);  // Read analog signal from A0 on ADS1115
-  float ratio = float(reading) / 65535.0;
+  adc0 = ads1115.readADC_SingleEnded(0);
+  float ratio = float(adc0) / 65535.0;
   float square_ratio = pow(ratio, 2.0);
+  float volts0 = ads1115.computeVolts(adc0);
 
   String reading_str = "Intensity:";
   my_lcd.Set_Text_colour(255, 165, 0);   
@@ -77,10 +78,18 @@ void loop(){
   my_lcd.Print_String(reading_str, (my_lcd.Get_Display_Width()-120)/2-1, (my_lcd.Get_Display_Height()-96)/2+line_no*8-1);
   my_lcd.Set_Text_colour(0, 255, 0); 
   int x_offset = 60;
-  my_lcd.Print_Number_Int(reading, (my_lcd.Get_Display_Width()-120)/2-1+x_offset, (my_lcd.Get_Display_Height()-96)/2+line_no*8-1, 0, ' ', 10);
-   
+  int y_offset = 96;
+  my_lcd.Print_Number_Int(adc0, (my_lcd.Get_Display_Width()-120)/2-1+x_offset, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*10-1, 0, ' ', 10);
 
-  Serial.print("reading: "); Serial.print(reading); 
+  line_no += 1;
+  my_lcd.Print_String("volt:", (my_lcd.Get_Display_Width()-120)/2-1, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*8-1);
+  my_lcd.Print_Number_Int(volts0, (my_lcd.Get_Display_Width()-120)/2-1+x_offset, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*10-1, 0, ' ', 10);   
+
+  line_no += 1;
+  my_lcd.Print_String("ratio:", (my_lcd.Get_Display_Width()-120)/2-1, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*8-1);
+  my_lcd.Print_Number_Float(ratio, 2, (my_lcd.Get_Display_Width()-120)/2-1+x_offset-6, (my_lcd.Get_Display_Height()-y_offset)/2+line_no*10-1, '.', 5,' ');   
+
+  Serial.print("reading: "); Serial.print(adc0); 
   Serial.print(", ratio: "); Serial.print(ratio);
   Serial.print(", square_ratio: "); Serial.println(square_ratio);
   
