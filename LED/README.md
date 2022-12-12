@@ -2,7 +2,4 @@
 <br>
 
 ![image](https://user-images.githubusercontent.com/24539773/206941678-ff1bc1bd-a17c-42ff-bd0c-0571dd7d4aec.png)
-
-
-
 <br>이미치 출처: https://www.rohm.co.kr/electronics-basics/led/led_what1
