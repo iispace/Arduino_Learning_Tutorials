@@ -25,7 +25,6 @@ unsigned long show_text_frame(void)
     my_lcd.Set_Text_colour(0, 255, 0); // green  
     my_lcd.Set_Text_Size(1);
     my_lcd.Set_Text_Mode(1);
-    //my_lcd.Print_String("* Color TFT Display *", CENTER, 2);
     my_lcd.Print_String("* Light Sensor TEMP6000 *", CENTER, 2);
 
     my_lcd.Set_Draw_color(128, 128, 128);
