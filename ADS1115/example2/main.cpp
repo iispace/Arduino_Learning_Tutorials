@@ -33,7 +33,7 @@ unsigned long show_text_frame(void)
     my_lcd.Set_Text_colour(255, 255, 255);   
     my_lcd.Set_Text_Size(1);
     my_lcd.Set_Text_Mode(1);
-    my_lcd.Print_String("<www.lcdwiki.com>", CENTER, my_lcd.Get_Display_Height()-9);
+    my_lcd.Print_String("Arduino Tutorial", CENTER, my_lcd.Get_Display_Height()-9);
 
     my_lcd.Set_Draw_color(255,255,0); 
     my_lcd.Draw_Rectangle(0, 11, my_lcd.Get_Display_Width()-1, my_lcd.Get_Display_Height()-1-11);   
