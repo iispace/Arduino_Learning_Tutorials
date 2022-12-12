@@ -59,6 +59,6 @@
 
 - pinMode(CS, INPUT);
 
-<br><br>
+<br>
 
 (2) 아두이노 Uno의 아날로그 입력 핀 사용을 줄이기 위해 TFT-LCD의 백라이트 LED(white LED)를 UNO 보드의 A0 핀 대신에 Digital핀 중에서 시리얼 통신의 TX, RX 동작을 위한 D0와 D1을 제외한 핀(예: D9)에 연결해서 동작시킬 수 있다. Digital 핀에 연결할 경우, 프로그램의 setup() 함수에서 pinMode를 선언해 주지 않았지만 잘 동작한다.<br>
