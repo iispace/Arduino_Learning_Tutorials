@@ -66,4 +66,4 @@
 
 ### Example Project
 
-[Arduino UNO에 ADS1115와 1.44" TFT LCT 연결](https://github.com/iispace/Arduino_Learning_Tutorials/blob/main/ADS1115/example2/main.cpp)
+[Light Sensor with ADS1115(Display on 1.44" TFT_LCD)](https://github.com/iispace/Arduino_Learning_Tutorials/blob/main/ADS1115/example2/main.cpp)
