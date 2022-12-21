@@ -42,7 +42,7 @@
 | 3.3V/5V | VCC | VCC
 |D13||CLK
 |D11||SDI(DIN)
-|A5 or $ \text{Digital Pin}^{(1)}$|CS(D/C)|CS(D/C)
+|A5 or $ \text{D P}^1 {Digital Pin}^{(1)}$|CS(D/C)|CS(D/C)
 |A4 or ${Digital Pin}^{(1)}$|RST|RST
 |A3|RS|RS
 |A2|SDI(DIN)|
