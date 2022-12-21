@@ -1,7 +1,3 @@
-# TEST
-
-$ \text{Digital Pin}$
-
 # 1.44" TFT LCD (SR7735S Driver IC / SKU:MAR1441)<br>
 <a href="http://www.lcdwiki.com/1.44inch_Arduino_SPI_Module_ST7735S_SKU:MAR1441" target="_blank">
   <img src="https://user-images.githubusercontent.com/24539773/204490332-9cf94e98-bf61-46d1-9cb9-082cf2dba9d3.png" width="300" height="300" align="left">
@@ -46,7 +42,7 @@ $ \text{Digital Pin}$
 | 3.3V/5V | VCC | VCC
 |D13||CLK
 |D11||SDI(DIN)
-|A5 or ${Digital Pin}^{(1)}$|CS(D/C)|CS(D/C)
+|A5 or ${Digital \ Pin}^{(1)}$|CS(D/C)|CS(D/C)
 |A4 or ${Digital Pin}^{(1)}$|RST|RST
 |A3|RS|RS
 |A2|SDI(DIN)|
