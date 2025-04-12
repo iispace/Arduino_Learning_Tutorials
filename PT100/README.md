@@ -6,6 +6,8 @@
 
 ## 재료:
 - PT100 (3 wires, Resistance Temperature Detectors Type)
+  - PT100 센서의 저항 값은 매우 작고 낮은 수준이기 때문에, 이 값을 정확히 읽기 위해서는 매우 민감한 증폭기가 필요함. 즉, PT100은 저항을 낮은 값으로 출력하기 때문에, 이를 정확하게 읽기 위해 고정밀도의 전자 회로가 필요.
+  - MAX31865는 이러한 고정밀도 전자 회로의 역할을 할 부품.
 - [MAX31865 Breakout board](https://learn.adafruit.com/adafruit-max31865-rtd-pt100-amplifier)
 - Arduino Uno
 - 4P Terminal
