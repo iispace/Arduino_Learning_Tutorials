@@ -29,7 +29,7 @@
 |5|A0| LCD screen register/data selection signal, high level:register, low level:data
 |6|SDA|SPI bus write data signal
 |7|SCK|SPI bus clock signla
-|8|LED| Backlight LED (3.3V)
+|8|LED| Backlight control, light up at high level, if no control is needed, connect to 3.3V constant light
  
 
 # Wiring<br>
