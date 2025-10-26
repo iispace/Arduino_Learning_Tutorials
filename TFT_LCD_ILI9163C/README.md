@@ -66,6 +66,96 @@
 
 
 
-# Example Project
+# Example Code
 
-[Light Sensor(TEMP6000) with ADS1115(Display on 1.44" TFT_LCD)](https://github.com/iispace/Arduino_Learning_Tutorials/tree/main/ADS1115/example2)
+/*
+ R,G,B LED 의 실제 전압 특정 실험
+*/
+#include <SPI.h>
+#include <Adafruit_GFX.h>
+#include <TFT_ILI9163C.h>
+
+// Color definitions
+#define BLACK   0x0000
+#define BLUE    0x001F
+#define RED     0xF800
+#define GREEN   0x07E0
+#define CYAN    0x07FF
+#define MAGENTA 0xF81F
+#define YELLOW  0xFFE0  
+#define WHITE   0xFFFF
+
+/*
+Arduino's
+You are using 4 wire SPI here, so:
+ MOSI:  11//Teensy3.x/Arduino UNO (for MEGA/DUE refere to arduino site)
+ MISO:  12//Teensy3.x/Arduino UNO (for MEGA/DUE refere to arduino site)
+ SCK:   13//Teensy3.x/Arduino UNO (for MEGA/DUE refere to arduino site)
+ the rest of pin below:
+ */
+#define __CS 10
+#define __DC 9
+#define __A0 8
+#define LED_Red 6
+#define LED_Yellow 5
+#define LED_Green 3     
+
+TFT_ILI9163C display = TFT_ILI9163C(__CS,__A0, __DC);
+
+float p = 3.1415926;
+int left_limit = 3;      // 왼쪽 시작 위치
+int top_limit = 3;
+int bottom_limit = 120;  // 맨 아래줄 위치
+
+int value = 255;
+
+void tftPrintText(int,  int, uint16_t, const char*);
+
+
+void setup() {
+  // put your setup code here, to run once:
+    display.begin();
+    Serial.begin(9600);
+
+    //uint16_t time = millis();
+    //time = millis() - time;
+    display.setRotation(45);  // 가로 방향으로 회전
+    delay(100);
+
+    display.clearScreen();
+    display.setCursor(left_limit,top_limit);
+    delay(100); 
+
+    for (int i=0;i<5;i++){
+      analogWrite(LED_Red, value);
+      analogWrite(LED_Yellow, value);
+      analogWrite(LED_Green, value);
+      delay(100);
+      analogWrite(LED_Red, 0);
+      analogWrite(LED_Yellow, 0);
+      analogWrite(LED_Green, 0);
+      delay(100);
+    }
+
+    tftPrintText(left_limit, top_limit, YELLOW, "TFT LCD is working now !!");
+
+
+    delay(2000);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  analogWrite(LED_Red, value); 
+  analogWrite(LED_Yellow, value); 
+  analogWrite(LED_Green, value); 
+
+}
+
+void tftPrintText(int col, int row, uint16_t color, const char* text) {
+  display.clearScreen();
+  display.setCursor(col, row);
+  display.setTextColor(color, BLACK);
+  display.setTextSize(1);
+  display.print(text);
+  Serial.println(text);
+}
