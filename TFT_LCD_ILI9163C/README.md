@@ -51,20 +51,19 @@
 
 <img width="611" height="324" alt="image" src="https://github.com/user-attachments/assets/3c632beb-636c-43f6-ae18-f78c3aedbffc" />
 
+<br>
 (2) PlatformIO의 Libraries 메뉴에서 TFT_ILI9163 라이브러리를 찾아 보면, 아래와 같이 해당 라이브러리를 설명하는 화면의 내용 중에 동작을 테스트할 수 있는 예제 코드가 있다. 이 코드를 아두이노에 업로드하여 동작을 확인했을 때 위에 있는 (비정상) 사진처럼 보인다면 TFT_ILI9163_settings.h 파일에서 제품 선택 옵션을 바꾸면 간단히 해결된다.
 
 <img width="1046" height="765" alt="image" src="https://github.com/user-attachments/assets/b1a4e7a5-a976-469d-874e-57e83156381d" />
 
-- #define CS 8   // TFT_LCD의 CS핀을 Arduino Uno의 D8에 연결한 경우 
-- #define RST 10 // TFT_LCD의 RST핀을 Arduino Uno의 D10에 연결한 경우
+<br>
+(3) TFT_ILI9163_settings.h 파일을 열고 아래 그림처럼 "#define __144_RED_PCB__" 부분을 주석처리하고, 그 아랫줄에 있는  "//#define __144_BLACK_PCB__" 부분의 주석을 해제하면 끝!.
 
-단, CS핀을 이와 같이 Uno의 Digital pin에 연결한 경우, setup()함수에서 pinMode를 INPUT으로 설정해 주어야 한다. 
-
-- pinMode(CS, INPUT);
+<img width="1049" height="798" alt="image" src="https://github.com/user-attachments/assets/679f9d00-8e60-47ff-93dd-e63c571afb12" />
 
 <br>
 
-(2) 아두이노 Uno의 아날로그 입력 핀 사용을 줄이기 위해 TFT-LCD의 백라이트 LED(white LED)를 UNO 보드의 A0 핀 대신에 Digital핀 중에서 시리얼 통신의 TX, RX 동작을 위한 D0와 D1을 제외한 핀(예: D9)에 연결해서 동작시킬 수 있다. Digital 핀에 연결할 경우, 프로그램의 setup() 함수에서 pinMode를 선언해 주지 않았지만 잘 동작한다.<br>
+
 
 
 # Example Project
