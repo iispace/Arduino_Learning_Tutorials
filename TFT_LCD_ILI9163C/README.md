@@ -133,5 +133,10 @@ void tftPrintText(int col, int row, uint16_t color, const char* text) {
   Serial.println(text);
 }
 ```
+
+<br>
+<br>
+<hr>
+
 # Reference
 [1] <a id="ref1"></a> [Arduino StackExchange-ILI9163C screen not working properly](https://arduino.stackexchange.com/questions/21581/ili9163c-screen-not-working-properly)
