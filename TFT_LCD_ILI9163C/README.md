@@ -22,17 +22,15 @@
 # TFT LCD Pin Description<br>
 | Number | Pin Label | Description |
 | :-: | :-: | :-: |
-|1|VCC|3.3V ~ 5V
+|1|VCC|5V/3.3V power input 
 |2|GND|GND
-|3|GND|GND
-|4|NC|Not defined, reserved
-|5|NC|Not defined, reserved
-|6|LED|Backlight control, High level lighting, if not controlled, connect 3.3V always bright
-|7|CLK|SPI bus clork signal
-|8|SDI|SPI bus write data signal
-|9|RS| LCD register/data selection signal, high level: register, low level: data
-|10|RST|LCD reset signal, low level reset
-|11|CS| LCD chip select signal, low level enable
+|3|CS| LCD chip select signal, low level enable
+|4|RST| LCD reset signal, low level reset
+|5|A0| LCD screen register/data selection signal, high level:register, low level:data
+|6|SDA|SPI bus write data signal
+|7|SCK|SPI bus clock signla
+|8|LED| Backlight LED (3.3V)
+ 
 
 # Wiring<br>
 | Arduino UNO | TFT LCD(Software SPI) | TFT LCD(Hardware SPI) |
