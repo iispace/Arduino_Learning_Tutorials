@@ -1,7 +1,8 @@
 # 1.44" TFT LCD (ILI9163C Driver IC)<br>
-<a href="https://electronics-lab.com/project/using-1-44-color-tft-display-ili9163c-arduino" target="_blank">
+<figure>
   <img src="https://github.com/user-attachments/assets/f85a97e1-f940-49e5-b4b0-68ca56afb17f" width="300" height="300" align="left">
-</a>
+  <figcaption align="center"> <a href="https://electronics-lab.com/project/using-1-44-color-tft-display-ili9163c-arduino">사진 출처</a></figcaption> 
+</figure>
  
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 <hr>
