@@ -68,10 +68,9 @@
 
 
 
-# Example Code
+# Simplied Example Code
 
 ```
-
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <TFT_ILI9163C.h>
@@ -95,43 +94,26 @@ Connection to Arduino Uno
 #define __CS 10
 #define __DC 9
 #define __A0 8
-#define LED_Red 6
-#define LED_Yellow 5
-#define LED_Green 3     
 
+// Generate TFT_LCD instance in the name of 'display'
 TFT_ILI9163C display = TFT_ILI9163C(__CS,__A0, __DC);
 
-float p = 3.1415926;
-int left_limit = 3;      // 왼쪽 시작 위치
+int left_limit = 3;      // left-side start poisition for more visibility
 int top_limit = 3;
-int bottom_limit = 120;  // 맨 아래줄 위치
-
-int value = 255;
+int bottom_limit = 120;  // max line number for more visibility
 
 void tftPrintText(int,  int, uint16_t, const char*);
-
 
 void setup() {
     display.begin();
     Serial.begin(9600);
 
-    display.setRotation(45);  // 가로 방향으로 회전
+    display.setRotation(45);  // to make TFT-LCD horizontally oriented
     delay(100);
 
     display.clearScreen();
     display.setCursor(left_limit,top_limit);
     delay(100); 
-
-    for (int i=0;i<5;i++){
-      analogWrite(LED_Red, value);
-      analogWrite(LED_Yellow, value);
-      analogWrite(LED_Green, value);
-      delay(100);
-      analogWrite(LED_Red, 0);
-      analogWrite(LED_Yellow, 0);
-      analogWrite(LED_Green, 0);
-      delay(100);
-    }
 
     tftPrintText(left_limit, top_limit, YELLOW, "TFT LCD is working now !!");
     delay(1000);
@@ -139,9 +121,6 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  analogWrite(LED_Red, value); 
-  analogWrite(LED_Yellow, value); 
-  analogWrite(LED_Green, value); 
 
 }
 
