@@ -59,7 +59,9 @@
 <br><br>
 (3) TFT_ILI9163_settings.h 파일을 열고 아래 그림처럼 "#define __144_RED_PCB__" 부분을 주석처리하고, 그 아랫줄에 있는  "//#define __144_BLACK_PCB__" 부분의 주석을 해제하면 끝!.
 
-<img width="1049" height="798" alt="image" src="https://github.com/user-attachments/assets/679f9d00-8e60-47ff-93dd-e63c571afb12" />
+<img width="650" height="500" alt="image" src="https://github.com/user-attachments/assets/679f9d00-8e60-47ff-93dd-e63c571afb12" />
+
+
 
 <br>
 
@@ -68,7 +70,7 @@
 
 # Example Code
 
-<code> 
+```
 
 #include <SPI.h>
 #include <Adafruit_GFX.h>
@@ -151,4 +153,4 @@ void tftPrintText(int col, int row, uint16_t color, const char* text) {
   display.print(text);
   Serial.println(text);
 }
-</code>
+```
