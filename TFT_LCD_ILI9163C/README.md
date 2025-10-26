@@ -51,12 +51,12 @@
 
 <img width="611" height="324" alt="image" src="https://github.com/user-attachments/assets/3c632beb-636c-43f6-ae18-f78c3aedbffc" />
 
-<br>
+<br><br>
 (2) PlatformIO의 Libraries 메뉴에서 TFT_ILI9163 라이브러리를 찾아 보면, 아래와 같이 해당 라이브러리를 설명하는 화면의 내용 중에 동작을 테스트할 수 있는 예제 코드가 있다. 이 코드를 아두이노에 업로드하여 동작을 확인했을 때 위에 있는 (비정상) 사진처럼 보인다면 TFT_ILI9163_settings.h 파일에서 제품 선택 옵션을 바꾸면 간단히 해결된다.
 
 <img width="1046" height="765" alt="image" src="https://github.com/user-attachments/assets/b1a4e7a5-a976-469d-874e-57e83156381d" />
 
-<br>
+<br><br>
 (3) TFT_ILI9163_settings.h 파일을 열고 아래 그림처럼 "#define __144_RED_PCB__" 부분을 주석처리하고, 그 아랫줄에 있는  "//#define __144_BLACK_PCB__" 부분의 주석을 해제하면 끝!.
 
 <img width="1049" height="798" alt="image" src="https://github.com/user-attachments/assets/679f9d00-8e60-47ff-93dd-e63c571afb12" />
@@ -68,9 +68,8 @@
 
 # Example Code
 
-/*
- R,G,B LED 의 실제 전압 특정 실험
-*/
+<code> 
+
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <TFT_ILI9163C.h>
@@ -86,12 +85,10 @@
 #define WHITE   0xFFFF
 
 /*
-Arduino's
-You are using 4 wire SPI here, so:
- MOSI:  11//Teensy3.x/Arduino UNO (for MEGA/DUE refere to arduino site)
- MISO:  12//Teensy3.x/Arduino UNO (for MEGA/DUE refere to arduino site)
- SCK:   13//Teensy3.x/Arduino UNO (for MEGA/DUE refere to arduino site)
- the rest of pin below:
+Connection to Arduino Uno
+ MOSI:  11//Arduino UNO  
+ MISO:  12//Arduino UNO  
+ SCK:   13//Arduino UNO  
  */
 #define __CS 10
 #define __DC 9
@@ -113,12 +110,9 @@ void tftPrintText(int,  int, uint16_t, const char*);
 
 
 void setup() {
-  // put your setup code here, to run once:
     display.begin();
     Serial.begin(9600);
 
-    //uint16_t time = millis();
-    //time = millis() - time;
     display.setRotation(45);  // 가로 방향으로 회전
     delay(100);
 
@@ -138,9 +132,7 @@ void setup() {
     }
 
     tftPrintText(left_limit, top_limit, YELLOW, "TFT LCD is working now !!");
-
-
-    delay(2000);
+    delay(1000);
 }
 
 void loop() {
@@ -159,3 +151,4 @@ void tftPrintText(int col, int row, uint16_t color, const char* text) {
   display.print(text);
   Serial.println(text);
 }
+</code>
