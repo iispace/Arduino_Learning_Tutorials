@@ -155,4 +155,4 @@ void tftPrintText(int col, int row, uint16_t color, const char* text) {
 }
 ```
 # Reference
-[1] [Arduino StackExchange-ILI9163C screen not working properly](https://arduino.stackexchange.com/questions/21581/ili9163c-screen-not-working-properly)
+#[1] [Arduino StackExchange-ILI9163C screen not working properly](https://arduino.stackexchange.com/questions/21581/ili9163c-screen-not-working-properly)
