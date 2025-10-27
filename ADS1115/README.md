@@ -5,6 +5,8 @@ ADS1115 module is an analog to digital converter module that has 16-bit precisio
 ![image](https://user-images.githubusercontent.com/24539773/205572192-566919d2-e452-40cd-a8a2-e063216aa6f6.png)
 
 
+# [Datasheet](https://www.ti.com/lit/ds/symlink/ads1115.pdf?ts=1761490011559&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1115)
+
 # Circuit
 <img src="https://user-images.githubusercontent.com/24539773/205836159-1374036f-f17c-4c4d-aea5-19165aabbda1.png" width="550" height="280" align="center">
 
