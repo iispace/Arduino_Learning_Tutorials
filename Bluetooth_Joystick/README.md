@@ -20,6 +20,11 @@
 |TX|D7|
 |RX|D6|
 
+# External library used
+<img width="1067" height="185" alt="image" src="https://github.com/user-attachments/assets/2e839cf0-852f-45f3-b466-5e3daf750a7e" />
+
+- [NeoSWSerial](https://docs.arduino.cc/libraries/neoswserial/) is an efficient replacement for SoftwareSerial at baud rate 9600, 19200, and 38400. Simultaneous RX & TX, does not require additional TIMERs, interrupts not disabled during RX. [More efficient than Arduino built-in SoftwareSerial.](https://github.com/SlashDevin/NeoSWSerial)
+
 # Code
 
 ```
