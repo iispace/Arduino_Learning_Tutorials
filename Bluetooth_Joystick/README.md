@@ -42,7 +42,6 @@ int buzzer_button = 5;  // '1' 전달 버튼 (Buzzer)
 int stop_button = 3;    // '0' 전달 버튼 (Stop)
 
 int joystick_button = 8;    // 조이스틱 쉴드의 방향 조정 장치을 누르면 정지 신호 전달 버튼으로 사용 ('0' 전달)
-int buttons[] = {up_button, down_button, buzzer_button, stop_button, joystick_button};
 
 int axis_x = A0;  // 조이스틱 쉴드 방향 조정 장치의 x축 연결 핀
 int axis_y = A1;  // 조이스틱 쉴드 방향 조정 장치의 y축 연결 핀 
