@@ -41,17 +41,21 @@ ADS1115 module is an analog to digital converter module that has 16-bit precisio
 # How to calculate ADC?
 
 - ADC는 입력 전압을 기준전압(Vref)에 대한 비율로 계산하여 디지털 값으로 변환
-- Arduino UNO의 경우, analogReference() 함수를 통해 외부 Aref, 내부 1.1V 밴드갭, Vcc 중 하나를 기준전압으로 선택할 수 있음
-   - anlaogReference(DEFAULT)  : Vcc (Vcc를 기준전압으로 사용할 경우, analogReference() 함수를 별도로 설정하지 않아도 됨).
-     
-     - Vcc를 사용할 때, USB를 통해 전압을 공급하는 경우 전원이 불안정해 질 수 있음.
-     - 아두이노의 배럴 커넥터(barrel connector)로 9V 전원을 공급하면 내장된 regulator에 의해 5V로 전원이 비교적 안정적으로 공급될 수 있음)
-       
-   - analogReference(INTERNAL) : 내부 1.1V 밴드갭 (단, 이 경우는 측정 범위가 1 ~ 1.1V로 제한되므로 저전압 센서 시 선택)
-   - analogReference(EXTERNAL) : Aref (단, Aref 사용 시, [LM4040](https://learnarduinonow.com/2015/05/18/measuring-voltage-with-arduino-and.html)과 같은 정밀하고 안정적인 밴드갭 기반의 전압 소자를 통해 안정적인 기준전압을 공급해 주어야 정확한 ADC 값을 얻을 수 있음)
-     
+
+  - AVR 10-bit(UNO): ADC = round(Vin / Vref) * 1023, (Vref: Aref, 2<sup>10</sup> - 1 = 1023)
+  
+- Arduino UNO의 경우, analogReference() 함수를 통해 외부 Aref, 내부 1.1V 밴드갭, Vcc 중 하나를 기준전압으로 선택할 수 있음  
 - UNO에서는 내부 1.1V 밴드갭 또는 Aref를 기준전압으로 사용하여 Vref 값을 안정적으로 유지할 수 있음.
 - 그러나 0 ~ 5V 범위로 입력되는 공급 전압(Vcc)을 Vref로 사용하면 공급 전압에 따라 Vref도 그만큼 변동됨. 즉, Vref의 값이 외부 전원에 따라 변동하거나 노이즈가 섞일 수 있음.
 - Vref가 변동하거나 노이즈가 섞이게 되면 ADC 측정값에 오차가 발생
-  - AVR 10-bit(UNO): ADC = round(Vin / Vref) * 1023, (Vref: Aref, 2<sup>10</sup> - 1 = 1023)
+
+- UNO에서 기준전압 선택 방법:
+  
+     - anlaogReference(DEFAULT)  : Vcc (Vcc를 기준전압으로 사용할 경우, analogReference() 함수를 별도로 설정하지 않아도 됨).
+     
+       - Vcc를 사용할 때, USB를 통해 전원을 공급하는 경우 전압이 불안정해 질 수 있음.
+       - 아두이노의 배럴 커넥터(barrel connector)로 9V 전원을 공급하면 내장된 regulator에 의해 전압이 5V로 안정적으로 공급될 수 있음)
+       
+   - analogReference(INTERNAL) : 내부 1.1V 밴드갭 (단, 이 경우는 측정 범위가 1 ~ 1.1V로 제한되므로 저전압 센서 시 선택)
+   - analogReference(EXTERNAL) : Aref (단, Aref 사용 시, [LM4040](https://learnarduinonow.com/2015/05/18/measuring-voltage-with-arduino-and.html)과 같은 정밀하고 안정적인 밴드갭 기반의 전압 소자를 통해 안정적인 기준전압을 공급해 주어야 정확한 ADC 값을 얻을 수 있음)
   
