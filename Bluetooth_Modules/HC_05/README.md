@@ -7,7 +7,7 @@
 
   - 아두이노에 프로그램 업로드
     
-    <img width="1002" height="926" alt="image" src="https://github.com/user-attachments/assets/e3887ba5-17f1-48fc-88e6-0b00cfd799d8" />
+    <img width="756" height="700" alt="image" src="https://github.com/user-attachments/assets/e3887ba5-17f1-48fc-88e6-0b00cfd799d8" />
 
   - 연결
 
@@ -26,7 +26,7 @@
       <img width="575" height="361" alt="image" src="https://github.com/user-attachments/assets/96bf08d0-8bd0-4f00-b74b-5d613fe7e5f9" />
 
   
-  - Serial monitor에서 시리얼 포트 연결
+  - Serial monitor에서 시리얼 포트 연결 및 모듈 설정
     
     <img width="1953" height="590" alt="image" src="https://github.com/user-attachments/assets/618f1710-27ff-42bd-9e73-69e96f4b5f78" />
 
