@@ -11,6 +11,11 @@
    
 <img width="496" height="400" alt="image" src="https://github.com/user-attachments/assets/32c718ec-5324-41d7-9e19-28aa6bda2e70" />
 
+## Funduino Joystick Shield Pinout
+
+   <img width="1008" height="369" alt="image" src="https://github.com/user-attachments/assets/c383008b-bf2a-4a14-8a21-86648770f0bd" />
+
+
 # Connection
 
 |Joystick Shield|Arduino Uno|
