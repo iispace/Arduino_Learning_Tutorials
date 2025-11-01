@@ -1,5 +1,5 @@
 
-# LED를 Photodiode로 사용해 보기
+# LED를 Photodiode로 사용해 보기 
 
 - 이 실험은 "Continuous observation of vegetation canopy dynamics using an integrated low-cost, near-surface remote sensing system"라는 논문에서 LED를 이용해 빛의 세기를 측정하는 LED sensor를 만든 것을 보고 그 개념을 이해하기 위해 시도한 것임.
 - LED를 역방향으로 연결하여 빛에 의해 생성된 역방향 전류가 저항에 전압을 만들게 하고, 그 전압을 ADC로 읽어 오도록 설정
