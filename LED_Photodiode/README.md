@@ -11,12 +11,17 @@
 - Arduino Uno x 1
 - LED (any color) x 2 (포토다이오드로 사용할 것 1개, 조명용으로 사용할 것 1개)
 - 3 Pin 미니 슬라이스 스위치 x 1
-- 저항: 1MOhm x 1, 220Ohm X 1
+- 저항: 1MOhm x 1 (포토다이오드로 사용할 LED 연결용), 220Ohm X 1 (조명 LED 풀업저항)
   
 
-# 결선도 
+# LED를 역방향으로 연결하는 결선도 예시 
 
 <img width="1296" height="474" alt="image" src="https://github.com/user-attachments/assets/e70317c3-7115-4ea5-9021-925900cc60e8" />
+
+
+# 실험체 결선도 
+
+<img width="1316" height="502" alt="image" src="https://github.com/user-attachments/assets/c0f71bee-cdb7-43cd-a7aa-9c7020e9d5ed" />
 
 
 # 구현 사진
@@ -49,3 +54,11 @@ Serial.println(volt);
 delay(1000);
 }
 ```
+
+# 측정 결과
+
+포토다이오드로 동작시킨 LED에 스마트폰의 플래쉬 라이트를 비추거나 비추지 않는 방법으로 광원의 세기를 조절하며 측정한 결과는 아래와 같음.
+
+<img width="477" height="288" alt="image" src="https://github.com/user-attachments/assets/3b1f6ec4-2780-4ac0-8df9-0a9543b17405" />
+
+위 그래프의 가로축은 측정 시간(초), 세로축은 analogRead(A0)값.
