@@ -21,7 +21,7 @@
 
       <img width="985" height="656" alt="image" src="https://github.com/user-attachments/assets/565a05da-5e59-4587-91f3-2cff0963a91b" />
 
-    - 만일 사용할 LED의 datasheet가 다음과 같다면, 아래 데이터시트 그림에 있는 Hyper Red LED를 역방향으로 안전하게 연결하기 위해 필요한 직렬 저항(R)의 크기는 500K&Omega;가 될 것임.
+    - 만일 사용할 LED의 [datasheet](https://www.arduino.cc/documents/datasheets/LEDRGB-L-154A4SURK.pdf)가 다음과 같다면, 아래 데이터시트 그림에 있는 Hyper Red LED를 역방향으로 안전하게 연결하기 위해 필요한 직렬 저항(R)의 크기는 500K&Omega;가 될 것임.
 
       <img width="637" height="369" alt="image" src="https://github.com/user-attachments/assets/4669d7cb-373b-4f9b-be71-303f09ec4b7d" />
       <img width="562" height="157" alt="image" src="https://github.com/user-attachments/assets/feb88883-c322-4aac-9268-578e8aeb9b3e" />
