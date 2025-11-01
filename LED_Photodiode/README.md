@@ -13,13 +13,20 @@
 - Arduino Uno x 1
 - LED (any color) x 2 (포토다이오드로 사용할 것 1개, 조명용으로 사용할 것 1개)
 - 3 Pin 미니 슬라이스 스위치 x 1
-- 저항: 1M&Omega; x 1 (포토다이오드로 사용할 LED에 역방향 전압을 걸 때, LED 소자가 파괴되지 않도록 보호하기 위한 저항), 220&Omega; X 1 (조명 LED 풀업저항)
+- 포토다이오드 LED 보호 저항 : 1M&Omega; x 1 (포토다이오드로 사용할 LED에 역방향 전압을 걸 때, LED 소자가 파괴되지 않도록 보호하기 위한 저항)
+- 조명 LED 풀업 저항 : 220&Omega; X 1 (부유 현상 억제용 저항)
+
   - 역방향 내전압(Reverse Voltage) 5V에서 안전하게 견딜 수 있는 최대 역방향 누설 전류(Reverse Current)가 5&micro;A 인 LED에 공급 전압 5V를 역방향으로 걸 때, LED에 흐르는 전류가 5&micro;A 이하가 되도록 직렬 저항(R)을 연결해야 함.
     - 직렬 저항(R)의 크기는 다음과 같이 계산하였음.
 
-      <img width="567" height="310" alt="image" src="https://github.com/user-attachments/assets/4541a2da-2a79-4b14-ad60-bb70ada6b52d" />
+      <img width="985" height="656" alt="image" src="https://github.com/user-attachments/assets/565a05da-5e59-4587-91f3-2cff0963a91b" />
 
+    - 만일 사용할 LED의 datasheet가 다음과 같다면, 아래 데이터시트 그림에 있는 Hyper Red LED를 역방향으로 안전하게 연결하기 위해 필요한 직렬 저항(R)의  500K&Omega;가 될 것임.
 
+      <img width="637" height="369" alt="image" src="https://github.com/user-attachments/assets/4669d7cb-373b-4f9b-be71-303f09ec4b7d" />
+      <img width="562" height="157" alt="image" src="https://github.com/user-attachments/assets/feb88883-c322-4aac-9268-578e8aeb9b3e" />
+
+      
 # LED를 역방향으로 연결하는 결선도 예시 
 
 <img width="1296" height="474" alt="image" src="https://github.com/user-attachments/assets/e70317c3-7115-4ea5-9021-925900cc60e8" />
