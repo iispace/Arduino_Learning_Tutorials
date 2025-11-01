@@ -39,7 +39,8 @@
 
 # 구현 사진
 
-<img width="1242" height="445" alt="image" src="https://github.com/user-attachments/assets/24593fe7-99e5-4c0b-9f55-e0f2f9eff7ce" />
+<img width="1309" height="461" alt="image" src="https://github.com/user-attachments/assets/1d5f09a3-fdf7-4547-9b3f-d0e92d2d494f" />
+
 
 
 # 코드
