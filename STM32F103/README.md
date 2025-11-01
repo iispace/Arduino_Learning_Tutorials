@@ -45,6 +45,23 @@
   
 
 <br>
+
+# 프로그램 업로드 방법
+
+- USB-TTL 사용
+
+  <img width="472" height="486" alt="image" src="https://github.com/user-attachments/assets/5804a254-ac15-47b1-b957-1b6ed516b8ba" />
+  <img width="498" height="486" alt="image" src="https://github.com/user-attachments/assets/d9bc7344-3abb-4f79-b39c-9ffcf0959dcd" />
+  <img width="928" height="694" alt="image" src="https://github.com/user-attachments/assets/e231a3e6-27c7-4f9a-a8e5-c5ac065f1bdd" />
+  
+- ST-LINK V2 사용
+
+  <img width="757" height="550" alt="image" src="https://github.com/user-attachments/assets/25d45562-c982-40f3-a642-1a6b0837cd49" />
+  <img width="514" height="697" alt="image" src="https://github.com/user-attachments/assets/52b5ac31-70a7-45bb-a73f-bdbcf72eb11d" />
+  
+
+
+
 <hr>
 
 # Reference
