@@ -73,12 +73,15 @@
      <img width="620" height="400" alt="image" src="https://github.com/user-attachments/assets/ef0d7cc3-d021-4dea-a945-9f177cdc17cf" />
 
      - 아래 그림처럼 가장 먼저 "컨넥터"를 선택하여 커넥터의 개수를 맞춰준다.
+       
        <img width="464" height="400" alt="image" src="https://github.com/user-attachments/assets/09a48601-427c-4f3f-92e0-b0f5239b16ec" />
 
      - 두 번째로는 "아이콘"으로 가서 "파일" 매뉴 하위에 있는 "Load image for view..."를 클릭한 후 위에서 만들어 두었던 icon 폴더에 해당하는 svg 파일을 선택해 준다.
+       
        <img width="928" height="400" alt="image" src="https://github.com/user-attachments/assets/1a4a6154-ed5b-42b3-85e0-0f73f32818b0" />
 
       - 세 번째로 "PCB"로 이동해서  "파일" 매뉴 하위에 있는 "Load image for view..."를 클릭한 후 위에서 만들어 두었던 pcb 폴더에 해당하는 svg 파일을 선택해 준다.
+        
         <img width="1040" height="400" alt="image" src="https://github.com/user-attachments/assets/9951be75-0e5a-487d-bca6-1b6996b7bbc8" />
 
       - 네 번째와 다섯 번째로 "스케메틱"과 "브레드보드"로 각각 이동해서 "파일" 매뉴 하위에 있는 "Load image for view..."를 클릭한 후 해당하는 폴더에 만들어 두었던 svg 파일을 선택해서 바꿔주면 수정 작업은 완료.
