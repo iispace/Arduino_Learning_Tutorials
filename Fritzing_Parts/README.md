@@ -44,10 +44,12 @@
 
      <img width="444" height="400" alt="image" src="https://github.com/user-attachments/assets/3a2ff2a0-5aca-47d3-a4c9-138151cc4a6c" />
 
-     - 해당 요소들을 모두 선택한 후 마우스 오른쪽 버튼을 눌러 "사본 만들기"를 해도 되고, 이미지 위에서 해당 핀이 있는 영역을 마우스로 드래그해서 선택한 후 Ctrl+C and Ctrl+V를 해도 된다. 단, "사본 만들기"를 한 경우에는 만들어진 사본이 원본과 동일한 위치에 만들어지므로, 눈으로 보기에는 사본이 어디에 만들어 졌는지 잘 보이지 않을 수 있다(원본과 겹쳐져 있기 때문에...). 
+     - 해당 요소들을 모두 선택한 후 마우스 오른쪽 버튼을 눌러 "사본 만들기"를 해도 되고, 이미지 위에서 해당 핀이 있는 영역을 마우스로 드래그해서 선택한 후 Ctrl+C and Ctrl+V를 해도 된다. 단, "사본 만들기"를 한 경우에는 만들어진 사본이 원본과 동일한 위치에 만들어지므로, 눈으로 보기에는 사본이 어디에 만들어 졌는지 잘 보이지 않을 수 있다(원본과 겹쳐져 있기 때문에...).
+       
        <img width="530" height="400" alt="image" src="https://github.com/user-attachments/assets/ca8ce7c4-01be-4b42-8031-0d773d0302ae" />
 
        - 아래 그림은 마우스를 클릭한 상태에서 OUT 핀 부분이 모두 선택되도록 드래그하는 방법으로 단위 부품을 이루는 모든 요소들을 한꺼번에 선택한 후 Ctrl+C, Ctrl+V를 한 모습이다.
+         
          <img width="558" height="400" alt="image" src="https://github.com/user-attachments/assets/2690904c-dfc3-4200-adc7-33ac952bc09c" />
 
       - 새로 생성된 부품의 이미지를 필요한 곳에 마우스를 드래그하여 위치시킨다.
