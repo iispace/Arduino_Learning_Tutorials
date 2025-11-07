@@ -66,6 +66,8 @@
          - 이 경우, inkscape에서 새로 만들어 준 요소의 id값은 connector4pin으로 설정되어야 한다. (id값 설정은 해당 요소를 선택한 후 오른쪽 마우스 버튼 클릭 후, "객체 특성(O)..."를 클릭하면 설정할 수 있는 창이 나온다.
          - connector"N"pin 요소 외에 connector"N"terminal 요소도 같은 요령으로 id 값을 설정한다.
            <img width="585" height="500" alt="image" src="https://github.com/user-attachments/assets/2eaacea0-bd9f-41e0-9498-87f9be29e375" />
+           <img width="655" height="500" alt="image" src="https://github.com/user-attachments/assets/f227b323-a9ed-40de-bd07-bf9b270a3a9a" />
+
 
 
    - 위와 같은 요령으로 breadboard, icon, pcb, schematic 에 해당하는 svg 파일들을 모두 만들어 주면 inkscape 작업은 끝. 이제 frizting으로 다시 돌아가서 처음에 선택해 둔 기존의 part를 마우스 오른쪽 클릭하고 "Edit(new parts editor)"를 선택한다.
