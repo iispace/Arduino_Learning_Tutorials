@@ -65,8 +65,10 @@
          - 각 핀에 대한 정보가 Name, Description, id 이렇게 보이는데, 가만히 보면 핀의 개수가 3일 때 마지막 핀의 id는 "connector2" 였는데, 4로 바꾸었을 때는 마지막 핀의 id가 "connector4"로 나타난다.
          - 이 경우, inkscape에서 새로 만들어 준 요소의 id값은 connector4pin으로 설정되어야 한다. (id값 설정은 해당 요소를 선택한 후 오른쪽 마우스 버튼 클릭 후, "객체 특성(O)..."를 클릭하면 설정할 수 있는 창이 나온다.
          - connector"N"pin 요소 외에 connector"N"terminal 요소도 같은 요령으로 id 값을 설정한다.
-           <img width="585" height="500" alt="image" src="https://github.com/user-attachments/assets/2eaacea0-bd9f-41e0-9498-87f9be29e375" />
-           <img width="655" height="500" alt="image" src="https://github.com/user-attachments/assets/f227b323-a9ed-40de-bd07-bf9b270a3a9a" />
+           <img width="468" height="400" alt="image" src="https://github.com/user-attachments/assets/2eaacea0-bd9f-41e0-9498-87f9be29e375" />
+           <img width="524" height="400" alt="image" src="https://github.com/user-attachments/assets/f227b323-a9ed-40de-bd07-bf9b270a3a9a" />
+           <img width="412" height="1003" alt="image" src="https://github.com/user-attachments/assets/daa348e2-86a8-4890-ae84-17d23bde61c5" />
+
 
 
 
