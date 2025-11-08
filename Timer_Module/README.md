@@ -39,7 +39,7 @@
 
 # Timer Module 이미지
 
-<img width="612" height="400" alt="image" src="https://github.com/user-attachments/assets/c9797537-5fd4-4fa3-b98b-9feb90071900" />
+<img width="459" height="300" alt="image" src="https://github.com/user-attachments/assets/c9797537-5fd4-4fa3-b98b-9feb90071900" />
 
 
 
