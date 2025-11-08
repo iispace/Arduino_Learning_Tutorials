@@ -28,7 +28,7 @@
 # Schematic 
 
     
-<img width="1208" height="802" alt="image" src="https://github.com/user-attachments/assets/b3037240-b7b7-4b6c-bc33-d23ae1096b08" />
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/b3037240-b7b7-4b6c-bc33-d23ae1096b08" />
 
 # Gerber image
 
