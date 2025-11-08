@@ -11,7 +11,7 @@
 4. N-channel MOSFET(STP16NF06 or 2N7002NXAKR) x 1
 5. Resistor (100K&Omega;) x 3
 6. On/Off Button Switch(Self-locking Type) x 1
-7. Schottky Diode (SMA(DO-214AC)) x 1
+7. Schottky Diode (SMA(DO-214AC)) x 1   ===> 일반 다이오드에 비해 배터리 효율과 고속 반응에는 유리하지만, 역누설 전류가 상대적으로 크고, 고온 안정성이 떨어질 수 있음.
 8. AMS1117-5.0V x 1 (12V to 5V linear regulator)
 9. XHB-2A Connector x 1  (배터리 연결 커넥터)
 10. XHB-4A(White)/4needle x 1  (STM32 보드 연결 커넥터)
