@@ -32,12 +32,14 @@
 
 # Gerber image
 
-<img width="1307" height="294" alt="image" src="https://github.com/user-attachments/assets/8702dc62-47cc-4d71-b0f8-d57f1240986f" />
+<img width="1494" height="333" alt="image" src="https://github.com/user-attachments/assets/5a780567-2531-4b98-9490-b5a0be0a1b76" />
+
 
 <br>
 
 # Timer Module 이미지
 
-<img width="786" height="511" alt="image" src="https://github.com/user-attachments/assets/40d64004-36c6-4557-88d9-ea3758d7180c" />
+<img width="770" height="503" alt="image" src="https://github.com/user-attachments/assets/c9797537-5fd4-4fa3-b98b-9feb90071900" />
+
 
 
