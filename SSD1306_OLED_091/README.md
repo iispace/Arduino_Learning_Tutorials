@@ -34,6 +34,14 @@
 ```
 /*
 TinyGPSPlus library 설치 후 GPS 모듈로 읽어 들인 위도,경도 정보를 OLED 0.91" display 장치에 출력
+
+Neo-6M GPS module | Arduino Uno
+-------------------------------
+       VCC        | 5V
+       RX         | D5
+       TX         | D4
+       GND        | GND
+
 */
 #include <TinyGPSPlus.h>
 #include <SoftwareSerial.h>
