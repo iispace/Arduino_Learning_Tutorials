@@ -1,4 +1,4 @@
-# SSD1306 OLED 0.91" (ILI9163C Driver IC)<br>
+# SSD1306 OLED 0.91" <br>
 <img width="386" height="121" alt="image" src="https://github.com/user-attachments/assets/a920b0a2-34dd-4a8a-bcb9-23383e671a16" />
  
 <br><br>
