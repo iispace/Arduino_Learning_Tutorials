@@ -32,6 +32,9 @@
 # Example Code
 
 ```
+/*
+TinyGPSPlus library 설치 후 GPS 모듈로 읽어 들인 위도,경도 정보를 OLED 0.91" display 장치에 출력
+*/
 #include <TinyGPSPlus.h>
 #include <SoftwareSerial.h>
 
