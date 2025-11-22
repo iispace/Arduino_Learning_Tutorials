@@ -1,5 +1,7 @@
 # SSD1306 OLED 0.91" <br>
 <img width="386" height="121" alt="image" src="https://github.com/user-attachments/assets/a920b0a2-34dd-4a8a-bcb9-23383e671a16" />
+
+128x32 pixel display
  
 <br><br>
 
@@ -49,7 +51,7 @@ Neo-6M GPS module | Arduino Uno
 /*
    This sample sketch demonstrates the normal use of a TinyGPSPlus (TinyGPSPlus) object.
    It requires the use of SoftwareSerial, and assumes that you have a
-   4800-baud serial GPS device hooked up on pins 4(rx) and 5(tx).
+   9600-baud serial GPS device hooked up on pins 4(rx) and 5(tx).
 */
 static const int RXPin = 4, TXPin = 5;
 static const uint32_t GPSBaud = 9600;
@@ -67,8 +69,7 @@ SoftwareSerial gps_Serial(RXPin, TXPin);
  Pick one up today in the adafruit shop!
  ------> http://www.adafruit.com/category/63_98
 
- This example is for a 128x64 pixel display using I2C to communicate
- 3 pins are required to interface (two I2C and one reset).
+ This example is for a 128x32 pixel display using I2C.
 
  Adafruit invests time and resources providing this open
  source code, please support Adafruit and open-source
