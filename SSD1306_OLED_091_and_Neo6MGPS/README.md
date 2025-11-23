@@ -1,37 +1,55 @@
-# SSD1306 OLED 0.91" <br>
+# GPS 정보 OLED Display에 출력하기
+
+## SSD1306 OLED 0.91" <br>
 <img width="386" height="121" alt="image" src="https://github.com/user-attachments/assets/a920b0a2-34dd-4a8a-bcb9-23383e671a16" />
 
 128x32 pixel display
+
+## Neo-6M GPS 모듈 <br>
+
+<img width="259" height="143" alt="image" src="https://github.com/user-attachments/assets/bd1e3ff6-f3d1-4be4-82c8-263eb8d73a70" />
+
  
 <br><br>
 
 <hr>
 
-# IDE<br>
+## IDE<br>
 <a href="https://platformio.org/" target="_blank">
   <img src="https://user-images.githubusercontent.com/24539773/204492337-c76cb87f-93e6-4132-af63-6062e60ef4e8.png" width="280" height="200" align="left">
 </a>
 <br><br><br><br><br><br><br><br>
 <hr>
 
-# Library<br>
+## Libraries<br>
 <img width="1094" height="206" alt="image" src="https://github.com/user-attachments/assets/78daa246-c7c8-4dfd-9840-2f9c26687fd1" />
+
+<img width="1095" height="207" alt="image" src="https://github.com/user-attachments/assets/cc03992f-c00a-4e0d-aa93-83028459f48a" />
 
 <br>
 
 
-# OLED 0.91" Pin Connection to Arduino Uno (I2C)<br>
+## OLED 0.91" Pin Connection to Arduino Uno(I2C)<br>
 | Number | SSD1306 OLED 0.91 | Arduino Uno |
 | :-: | :-: | :-: |
 |1|GND|GND|
 |2|VCC|3.3V|
-|3|SCL|A5|
-|4|SDA|A4|
+|3|SCL|A5||
+|4|SDA|A4||
+
+
+## Neo-6M GPS module Pin Connection to Arduino Uno<br>
+| Number | Neo-6M GPS module | Arduino Uno |
+| :-: | :-: | :-: |
+|1|GND|GND|
+|2|TX|D4|
+|3|RX|D3|
+|4|VCC|5V|
 
 <br>
 
 
-# Example Code
+## Example Code
 
 ```
 /*
@@ -183,7 +201,7 @@ void displayInfo(char * info){
 
 ```
 
-# 테스트
+## 테스트
 
 <img width="396" height="300" alt="image" src="https://github.com/user-attachments/assets/8b134821-a5db-4ed8-a28b-25f3363604c6" />
 
