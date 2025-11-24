@@ -5,7 +5,7 @@
 
 128x32 pixel display
 
-## Neo-6M GPS 모듈 <br>
+## ublox Neo-6M GPS 모듈 <br>
 
 <img width="220" height="200" alt="image" src="https://github.com/user-attachments/assets/12c303d8-8e4d-4e58-a03b-f696b4cd10bd" />
 <br>
