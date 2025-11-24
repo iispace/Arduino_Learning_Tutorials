@@ -199,6 +199,8 @@ void displayInfo(char * info){
 ## 테스트
 
 <img width="396" height="300" alt="image" src="https://github.com/user-attachments/assets/8b134821-a5db-4ed8-a28b-25f3363604c6" />
+<img width="411" height="300" alt="image" src="https://github.com/user-attachments/assets/2b4027df-f3d0-4b94-8dab-0ff7806c8017" />
+
 
 
 https://github.com/user-attachments/assets/e249633c-ffc3-46f6-b98b-a7e8927b5ca5
