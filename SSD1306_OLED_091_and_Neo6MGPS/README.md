@@ -7,7 +7,9 @@
 
 ## Neo-6M GPS 모듈 <br>
 
-<img width="259" height="143" alt="image" src="https://github.com/user-attachments/assets/bd1e3ff6-f3d1-4be4-82c8-263eb8d73a70" />
+<img width="220" height="200" alt="image" src="https://github.com/user-attachments/assets/12c303d8-8e4d-4e58-a03b-f696b4cd10bd" />
+<br>
+<img width="255" height="150" alt="image" src="https://github.com/user-attachments/assets/a91fed65-2ca7-4b03-b4c8-ea1124b7f689" />
 
  
 <br><br>
