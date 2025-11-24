@@ -54,17 +54,8 @@
 ## Example Code
 
 ```
-/*
-TinyGPSPlus library 설치 후 GPS 모듈로 읽어 들인 위도,경도 정보를 OLED 0.91" display 장치에 출력
+// TinyGPSPlus library 설치 후 GPS 모듈로 읽어 들인 위도,경도 정보를 OLED 0.91" display 장치에 출력
 
-Neo-6M GPS module | Arduino Uno
--------------------------------
-       VCC        | 5V
-       RX         | D3
-       TX         | D4
-       GND        | GND
-
-*/
 #include <Arduino.h>
 #include <SoftwareSerial.h>
 
@@ -73,6 +64,7 @@ Neo-6M GPS module | Arduino Uno
 #include <Adafruit_SSD1306.h>
 
 #include <TinyGPSPlus.h>
+
 TinyGPSPlus gps;
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
@@ -80,6 +72,7 @@ TinyGPSPlus gps;
 
 #define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
 #define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
+
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 #define NUMFLAKES     10 // Number of snowflakes in the animation example
