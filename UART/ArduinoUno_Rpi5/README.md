@@ -73,6 +73,12 @@
 
 <hr>
 
+### 테스트 동영상
+
+  https://github.com/user-attachments/assets/8bc2e712-7c10-4829-a4c4-161e7472e4ec
+
+
+
 # References:
 
   <a id="ref_1">[1]</a> [NeoSWSerial](https://github.com/SlashDevin/NeoSWSerial?utm_source=platformio&utm_medium=piohome)
