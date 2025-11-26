@@ -2,8 +2,9 @@
 
   - Arduino Uno의 기본 시리얼 핀인 D0(RX), D1(TX)는 프로그램 업로드 및 USB 시리얼 모니터와의 통신에 사용되는 하드웨어 UART 포트임. 따라서 이 포트는 다른 용도로 활용할 경우 업로드 과정이나 디버깅 기능과 충돌을 일으킬 수 있으므로 일반적인 사용자 애플리케이션에서는 사용을 지양하는 것이 바람직함.
   - 다행히 Arduino 보드에서는 SoftwareSerial 라이브러리를 통해 임의의 디지털 핀을 시리얼 통신 포트로 지정할 수 있음.
-  - 본 예제에서는 D4(RX), D5(TX) 핀을 시리얼 통신에 활용하며, 기본 SoftwareSerial보다 안정성과 성능이 개선된 NeoSWSerial[1] 라이브러리를 사용하여 보다 효율적인 데이터 송수신을 구현함.
-
+  - 본 예제에서는 D4(RX), D5(TX) 핀을 시리얼 통신에 활용하며, 기본 SoftwareSerial보다 안정성과 성능이 개선된 NeoSWSerial[[1]](#ref_1) 라이브러리를 사용하여 보다 효율적인 데이터 송수신을 구현함.
+  - 또한, 3.3V logic signal을 보내는 라즈베리파이와 달리 아두이노 우노는 5V logic signal을 보내므로, 중간에 반드시 Logic Level Convert를 두어야 회로가 망가지지 않음.
+    
 <hr>
 
 ## 재료
@@ -74,4 +75,4 @@
 
 # References:
 
-  <id="ref_1">[1] [NeoSWSerial](https://github.com/SlashDevin/NeoSWSerial?utm_source=platformio&utm_medium=piohome)
+  <a id="ref_1">[1]</a> [NeoSWSerial](https://github.com/SlashDevin/NeoSWSerial?utm_source=platformio&utm_medium=piohome)
