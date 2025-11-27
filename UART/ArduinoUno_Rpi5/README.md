@@ -24,7 +24,7 @@
   1. Terminal을 열고 편집기로 "/boot/firmware/config.txt" 열기.
      - ``` pi@raspberrypi:~$ sudo nano /boot/firmware/config.txt ```
        
-  2. 키보드 화살표를 이용하여 제일 아래쪽으로 내려가면 [all]이라는 구역이 나오는데, 여기에 다음과 같이 dtoverlay=uart1 또는 dtoverlay=uart2와 같이 사용하고자 할 UART를 활성화
+  2. 키보드 화살표를 이용하여 제일 아래쪽으로 내려가면 [all]이라는 구역이 나오는데, 여기에 다음과 같이 dtoverlay=uart1 또는 dtoverlay=uart2와 같은 형식으로 사용하고자 할 UART 추가
 
      <img width="366" height="300" alt="image" src="https://github.com/user-attachments/assets/829dd632-3dbc-40a5-8a4b-c6c5b930482f" />
      
