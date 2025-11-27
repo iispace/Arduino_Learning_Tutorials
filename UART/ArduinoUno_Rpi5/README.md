@@ -118,5 +118,5 @@
 
   <a id="ref_1">[1]</a> [NeoSWSerial](https://github.com/SlashDevin/NeoSWSerial?utm_source=platformio&utm_medium=piohome)
   
-  <a ud="ref_2">[2]</a> [Rpi Documentation](https://www.raspberrypi.com/documentation/computers/configuration.html#raspberry-pi-zero-1-2-and-3)
+  <a id="ref_2">[2]</a> [Rpi Documentation](https://www.raspberrypi.com/documentation/computers/configuration.html#raspberry-pi-zero-1-2-and-3)
   
