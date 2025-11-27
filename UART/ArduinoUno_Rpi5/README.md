@@ -120,5 +120,5 @@
   
   <a id="ref_1">[1]</a> [NeoSWSerial](https://github.com/SlashDevin/NeoSWSerial?utm_source=platformio&utm_medium=piohome)
   
-  <a id="ref_2">[2]</a> [Rpi Documentation](https://www.raspberrypi.com/documentation/computers/configuration.html#raspberry-pi-zero-1-2-and-3)
+  <a id="ref_2">[2]</a> [Raspberry Pi 5 / Ubuntu 24.04 Can't get GPIO14/15;TX.RX;pins8/10 to work](https://groups.google.com/g/hbrobotics/c/JY6jtt0Vn18/m/AfYaEfIZAwAJ)
   
