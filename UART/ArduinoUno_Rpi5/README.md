@@ -4,7 +4,7 @@
   - 다행히 Arduino 보드에서는 SoftwareSerial 라이브러리를 통해 임의의 디지털 핀을 시리얼 통신 포트로 지정할 수 있음.
   - 본 예제에서는 D4(RX), D5(TX) 핀을 시리얼 통신에 활용하며, 기본 SoftwareSerial보다 안정성과 성능이 개선된 NeoSWSerial[[1]](#ref_1) 라이브러리를 사용하여 보다 효율적인 데이터 송수신을 구현함.
   - Raspberry Pi 5 (이하 Rpi 5)에서도 여러개의 UART를 지원하고 있으므로, 필요에 따라 UART1, UART2 등을 추가로 활성화해서 사용 가능(Rpi 5는 최대 UART5까지 지원하는 것으로 알고는 있으나 정확한 것은 확인이 필요함!!)
-  - 또한, 라즈베리파이는 3.3V logic level인데 아두이노 우노는 5V logic level이므로, 중간에 반드시 Logic Level Convert를 두어야 회로가 망가지지 않음. 여기서는 Sparkfun Bi-Directional Logic Level Convert(BD-LLC)를 사용함.
+  - 또한, 라즈베리파이는 3.3V logic level인데 아두이노 우노는 5V logic level이므로, 중간에 반드시 Logic Level Convert를 두어야 회로가 망가지지 않음. 여기서는 [Sparkfun Bi-Directional Logic Level Convert(BD-LLC)](https://www.sparkfun.com/sparkfun-logic-level-converter-bi-directional.html#content-documentation)를 사용함.
     
     
 <hr>
@@ -37,10 +37,11 @@
 
   6. 마지막으로, 활성화된 UART와 연결된 GPIO 핀 번호를 확인하기 위해 다음과 같이 터미널에서 ``` pinctrl 0-15 ``` 명령 실행 (핀 GPIO0부터 GPIO15까지만 출력하는 명령. 더 많은 핀 번호를 보고 싶다면, 0-보고싶은 범위 끝 번호)
 
-     <img width="324" height="300" alt="image" src="https://github.com/user-attachments/assets/b6b9ba70-c7da-498d-abf4-6c938253f9b9" />
+     <img width="324" height="300" alt="image" src="https://github.com/user-attachments/assets/92c160ee-dd2d-493c-a18c-ff90059b5dbd" />
 
+  7. 위와 같이 /dev/에 장치가 잘 보이고, pinctrl에서도 추가된 UART의 핀 번호가 TXD, RXD와 매핑되었다면 추가 UART가 제대로 활성화된 것.
 
-## 결선도
+## Rpi 5와 Arduino Uno 연결하기
 
   <img width="774" height="330" alt="image" src="https://github.com/user-attachments/assets/15070ed1-244b-4ea1-89d6-a3be1c445c71" />
 
