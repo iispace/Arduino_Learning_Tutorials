@@ -21,9 +21,24 @@
 
 ## Rpi 5에 추가 UART 활성화
 
-  ```
+  1. Terminal을 열고 편집기로 "/boot/firmware/config.txt" 열기.
+     - ``` pi@raspberrypi:~$ sudo nano /boot/firmware/config.txt ```
+       
+  2. 키보드 화살표를 이용하여 제일 아래쪽으로 내려가면 [all]이라는 구역이 나오는데, 여기에 다음과 같이 dtoverlay=uart1 또는 dtoverlay=uart2와 같이 사용하고자 할 UART를 활성화
 
-  ```
+     <img width="366" height="300" alt="image" src="https://github.com/user-attachments/assets/829dd632-3dbc-40a5-8a4b-c6c5b930482f" />
+     
+  3. Ctrl+X를 입력한 후 수정사항을 저장할 수 있도록 y를 입력하고 [엔터]키를 치면 nano 편집기 종료
+     
+  4. 터미널에서 ```sudo reboot``` 명령을 실행하여 Rpi 5를 리부팅. (리부팅해야 UART 활성화 적용됨)
+  5. Rpi 5가 리부팅 되었다면, 다시 터미널을 열고, ``` ls /dev/ttyAMA* ``` 명령어로 config.txt에 활성화한 UART 장치가 보이는지 확인
+     
+     <img width="474" height="100" alt="image" src="https://github.com/user-attachments/assets/a414046e-7a2d-4215-8ed6-d9ac130eb717" />
+
+  6. 마지막으로, 활성화된 UART와 연결된 GPIO 핀 번호를 확인하기 위해 다음과 같이 터미널에서 ``` pinctrl 0-15 ``` 명령 실행 (핀 GPIO0부터 GPIO15까지만 출력하는 명령. 더 많은 핀 번호를 보고 싶다면, 0-보고싶은 범위 끝 번호)
+
+     <img width="324" height="300" alt="image" src="https://github.com/user-attachments/assets/b6b9ba70-c7da-498d-abf4-6c938253f9b9" />
+
 
 ## 결선도
 
