@@ -31,7 +31,7 @@
   3. Ctrl+X를 입력한 후 수정사항을 저장할 수 있도록 y를 입력하고 [엔터]키를 치면 nano 편집기 종료
      
   4. 터미널에서 ```sudo reboot``` 명령을 실행하여 Rpi 5를 리부팅. (리부팅해야 UART 활성화 적용됨)
-  5. Rpi 5가 리부팅 되었다면, 다시 터미널을 열고, ``` ls /dev/ttyAMA* ``` 명령어로 config.txt에 활성화한 UART 장치가 보이는지 확인
+  5. Rpi 5가 리부팅 되었다면, 다시 터미널을 열고, ``` ls /dev/ttyAMA* ``` 명령어로 config.txt에 추가한 UART 장치가 보이는지 확인
      
      <img width="474" height="100" alt="image" src="https://github.com/user-attachments/assets/a414046e-7a2d-4215-8ed6-d9ac130eb717" />
 
