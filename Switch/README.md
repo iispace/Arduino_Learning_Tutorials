@@ -5,13 +5,17 @@
     <img width="540" height="150" alt="image" src="https://github.com/user-attachments/assets/f495f0e0-624d-4938-8329-951fedfbe5dd" />
     <img width="202" height="150" alt="image" src="https://github.com/user-attachments/assets/d432b8f9-d01b-40d9-92f1-b5e0a87b49d1" />
 
-# 동작 원리
+<br>
+
+## 동작 원리
 
   <img width="348" height="150" alt="image" src="https://github.com/user-attachments/assets/1a50504c-760a-4809-a14e-90582b874202" />
 
   그림 출처: [에듀이노 오픈랩](https://blog.naver.com/eduino/220908567028)
 
-# 결선도
+<br>
+
+## 결선도
 
   <img width="201" height="300" alt="image" src="https://github.com/user-attachments/assets/0061831e-8e17-4955-990d-2d4995e6659a" />
 
